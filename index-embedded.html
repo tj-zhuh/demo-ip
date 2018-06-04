@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />      
+    <link href="develop/index/css/page.css" rel="stylesheet" />
+    <link href="develop/index/css/header.css" rel="stylesheet" />   
+    <link href="develop/index/css/mfr.css" rel="stylesheet" />
+    <link href="develop/index/css/tab.css" rel="stylesheet" />
+    <style>
+        /*删除顶部导航以及左侧一级菜单*/
+        .header {
+            display:none;
+        }
+        .mfr1-outer {
+            display:none;
+        }
+        .ui,
+        .mfr2,
+        .mfr3,
+        .mfr4 {
+            margin-left:0;
+        }
+    </style>
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="switch" id="switch">
+                <img id="switch1" src="develop/index/images/switch.png" />
+                <img id="switch2" style="display:none;" src="develop/index/images/switch-hide-left.png" />
+            </div>
+            <img src="develop/index/images/logo.png" class="logo" id="logo" />            
+            <div class="personal-center">
+                <div class="username" id="username"></div>
+                <div class="operations">
+                    <span class="greeting">早上好，欢迎您的光临！</span>
+                    <img src="develop/index/images/split.png" />
+                    <ul>
+                        <li id="changepsw"><img src="develop/index/images/changepsw.png" />修改密码</li>
+                        <li id="exit"><img src="develop/index/images/exit.png" />退出</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="mfr" id="mfr"></div> 
+        <ul class="tabs" id="tabs"></ul>
+        <div class="ui" id="ui"></div>
+    </div>
+    <img src="develop/index/images/close-hover.png" style="display:none;">
+    <script src="js/config.js"></script>
+    <script src="js/require-2.1.11.js" data-main="develop/index/page"></script>
+</body>
+</html>

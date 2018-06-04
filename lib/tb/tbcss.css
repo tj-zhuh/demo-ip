@@ -1,0 +1,65 @@
+* table {
+    border-collapse: collapse;
+}
+
+* tr {
+    cursor: pointer;
+}
+
+th.tj-grid-th {
+    color: #fff;
+    /*min-width:1rem;*/
+    background-color: #0f1e36;
+    /*border-top: solid 1px #436382;*/
+    /*border-left: 1px solid #436382;*/
+    line-height: 0.3rem;
+    height: 0.3rem;
+    font-size: 0.15rem;
+    border-bottom: 1px #436382 solid;
+    cursor: context-menu;
+    font-family: 'Microsoft YaHei';
+}
+
+td.tj-grid-td {
+    color: #fff;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.3rem;
+    height: 0.3rem;
+    /*border-left: 1px solid #436382;*/
+    /*border-bottom: 1px #436382 solid;*/
+    font-family: 'Microsoft YaHei';
+}
+
+* table.tj-grid-table th:first-child {
+    border-left: none;
+}
+
+* table.tj-grid-table td:first-child {
+    border-left: none;
+}
+/*style of odd td line*/
+tr.odd {
+    background: #1b2f4f;
+}
+
+tr.odd:hover {
+    background: #224f75;
+}
+
+/*style of even td line*/
+tr.even {
+    background-color: #152742;
+}
+
+tr.even:hover {
+    background-color: #224f75;
+}
+
+/*tr.tjTb-grid-onSelect {
+  background-color: #e4f8f4; 
+
+}*/
+
+/*# sourceMappingURL=tbcss.css.map */
+

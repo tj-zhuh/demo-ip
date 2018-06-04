@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0.18rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+select, input {
+    outline: 0;
+}
+
+/**********************************************************以上是全局**********************************************************************/
+
+body {
+    background-color: #0B2035;
+}
+sub,
+sup{
+    font-size:0.1rem;
+}
+table {
+    border-left: solid 1px #436382;
+    border-top: solid 1px #436382;
+    border-bottom: solid 1px #436382; 
+}
+
+
+
+/******hacklyf******/
+table tr td .tb-link strong{
+    color:#00edb9;
+    text-decoration:underline;
+}
+table tr th .tb-link,
+table tr td .tb-link{
+    color:#00edb9;
+    text-decoration:underline;
+}
+/**********************/
+th {
+    background-color: #0f1e36;
+    color: #fff;
+    border-right: solid 1px #436382;
+    border-bottom: solid 1px #436382;
+}
+
+td {
+    /*background-color:#1b2f4f;*/
+    color: #fff;
+    border-right: solid 1px #436382;
+    /*border-bottom: solid 1px #436382;*/
+}
+
+select,
+input {
+    background-color: #0a2033;
+    width: 1.45rem;
+    height: 0.25rem;
+    border: solid 1px #436382;
+    color: #c4d2e9;
+    font-size: 0.15rem;
+    box-sizing: border-box;
+    padding-left: 0.05rem;
+}
+
+option {
+    font-size: 0.14rem;
+    color: #c4d2e9;
+}
+
+textarea {
+    font-size: 0.14rem;
+    padding-top: 0.1rem;
+    padding-left: 0.2rem;
+    line-height: 0.3rem;
+    resize: none;
+    outline: none;
+    color:#fff;
+    background-color:#0A2033;
+    border-color:#436382;
+}
+
+/*外壳*/
+.panel {
+    margin-left: 0.11rem;
+    margin-right: 0.1rem;
+    height: 7rem;
+    border: solid 3px #ccc;
+    margin-top: 0.1rem;
+    background-color: #0a2033;
+    border-image-source: url(../images/zborder.png);
+    border-image-slice: 26;
+    border-image-width: 0.3rem;
+    border-image-outset: 0;
+    position: relative;
+}
+
+/*.panel:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #5b8daf;
+}*/
+
+.panel-title {
+    background-color: #1b2f4f;
+    /*border-bottom: solid 1px #bababa;*/
+    font-weight: 600;
+    height: 0.41rem;
+}
+
+.panel-title > p {
+    color: #bccae1;
+    font-size: 0.18rem;
+    font-family: 'Microsoft YaHei';
+    line-height: 0.41rem;
+    float: left;
+    min-width: 1rem;
+    margin-left: 0.25rem;
+}
+
+.query-conditions {
+    clear: both;
+    height: 0.3rem;
+    margin-top: 0.1rem;
+    margin-left: 0.25rem;
+}
+
+.query-conditions li {
+    float: left;
+    margin-right: 0.4rem;
+}
+
+li.forDate {
+    margin-right: 0;
+}
+
+.query-conditions li label {
+    color: #c4d2e9;
+    margin-right: 0.1rem;
+    font-size: 0.14rem;
+}
+
+.query-buttons {
+    margin-left: 0.25rem;
+    margin-top: 0.1rem;
+    clear: both;
+}
+
+.query-buttons li {
+    float: left;
+    margin-right: 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+
+.btn {
+    background-color: #1B2F4F;
+    border-radius: 0.05rem;
+    color: #fff;
+    font-size: 0.15rem;
+    line-height: 0.3rem;
+    height: 0.3rem;
+    cursor: pointer;
+    min-width: 0.8rem;
+    border: solid 1px #389edc;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #284D6A;
+}
+
+.btn:active {
+    background-color: #0A2033;
+}
+
+
+
+/*限制条件栏*/
+.inLine-gridBar {
+    width: 100%;
+}
+
+.panel .grid-container {
+    overflow: auto;
+    clear: both;
+    margin-top: 0.1rem;
+    /*height: 2.05rem;*/
+    margin-left: 0.25rem;
+    margin-right: 0.2rem;
+    /*border-bottom: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;*/
+}
+
+
+.mtree {
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+}
+
+.elseRight {
+    height: 7.6rem;
+    width: 98.5%;
+    float: right;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+    margin-left: 0;
+    /*border: solid 1px #ccc;*/
+}
+
+.charts-container {
+    /*width:100%;*/
+    border: solid 1px #436382;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.tab-titles {
+    clear: both;
+    margin-left: 0.2rem;
+}
+
+.tab-titles li {
+    cursor: pointer;
+    float: left;
+    border: solid 1px #436382;
+    background-color: transparent;
+    color:#fff;
+}
+
+.tab-titles li.active {
+    border-width: 1px;
+    /*border-bottom: solid 1px red;*/
+    background-color: #286aa2;
+}
+
+.tab-titles li div {
+    font-size: 0.14rem;
+    padding: 0.08rem 0.15rem;
+}
+
+
+
+
+
+.toolbar {
+    position: fixed;
+    right: 0.1rem;
+    top: 0.3rem;
+    width: 0.5rem;
+    z-index: 1;
+}
+
+.toolbar-btn {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: #183b54;
+    border: 1px solid #42637b;
+    margin-top: 0.1rem;
+    position: relative;
+    cursor: pointer; 
+}
+
+.toolbar-btn:hover {
+    /*background-color: #e7e7e7;*/
+    /*border-color: #bbb;*/
+}
+
+.toolbar-btn cite {
+    width: 0.26rem;
+    height: 0.25rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.12rem;
+    margin-left: -0.12rem;
+    background-size: 100% 100%;
+}
+
+.toolbar-btn:hover cite {
+    display: none;
+}
+
+.toolbar-btn span {
+    display: none;
+    font-size: 0.15rem;
+    color: #fff;
+    font-family:SimSun;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+
+.toolbar-btn:hover span {
+    display: block;
+}
+
+.toolbar.collapsed .toolbar-btn {
+    display: none;
+}
+
+.toolbar.collapsed .toolbar-btn-menu {
+    display: block;
+}
+
+.toolbar-btn-add cite {
+    background-image: url(../images/tool-add.png);
+}
+
+.toolbar-btn-check cite {
+    background-image: url(../images/tool-check.png);
+}
+
+.toolbar-btn-del cite {
+    background-image: url(../images/tool-del.png);
+}
+
+.toolbar-btn-export cite {
+    background-image: url(../images/tool-export.png);
+}
+
+.toolbar-btn-favor cite {
+    background-image: url(../images/tool-favor.png);
+}
+
+.toolbar-btn-menu cite {
+    background-image: url(../images/tool-menu.png);
+}
+
+.toolbar-btn-print cite {
+    background-image: url(../images/tool-print.png);
+}
+
+.toolbar-btn-publish cite {
+    background-image: url(../images/tool-publish.png);
+}
+
+.toolbar-btn-query cite {
+    background-image: url(../images/tool-query.png);
+}
+
+.toolbar-btn-save cite {
+    background-image: url(../images/tool-save.png);
+}
+
+
+.membrane-div {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+/*****************************选择项btns***********************************/
+.select-btns {
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+
+.select-btns > li {
+    cursor: pointer;
+    float: left;
+    min-width: 1rem;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    text-align: center;
+    padding: 0 0.1rem;
+    background-color: transparent;
+    color: #91bcc8;
+    border: solid 1px #286aa2;
+    border-left: none;
+}
+
+.select-btns > li:first-child {
+    border-left: solid 1px #286aa2;
+}
+
+.select-btns li.active {
+    background-color: #003363;
+    color: #fff;
+}
+
+.select-btns li div {
+    width: 100%;
+    height: 100%;
+    font-size: 0.14rem;
+}

@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>excel数据转html table</title>
+    <link href="tb.css" rel="stylesheet" />
+    <style>
+        textarea {
+            height: 500px;
+            width: 400px;
+            font-family: SimSun;
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 5px;
+            float: left;
+            overflow: auto;
+            margin-bottom: 30px;
+        }
+
+        #tran {
+            border: 1px solid #ccc;
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        #tran:hover {
+            background-color: #eee;
+        }
+
+        #tran:active {
+            background-color: #ccc;
+        }
+
+        .middle {
+            float: left;
+            margin-left: 10px;
+            margin-top: 100px;
+        }
+
+        .thnumber {
+            margin-left: 0px;
+            line-height: 30px;
+            height: 30px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .thnumber input {
+            width: 50px;
+            height: 30px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        #sample {
+            margin-top: 30px;
+            clear: both;
+        }
+    </style>
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <div class="container">
+        <textarea id="t1"></textarea>
+        <div class="middle">
+            <div class="thnumber">
+                <input type="number" min="0" max="9" id="number1" value="1" />
+                顶部列头行数
+            </div>
+            <div class="thnumber">
+                <input type="number" min="0" max="9" id="number2" value="0" />
+                左侧列头列数
+            </div>
+            <div id="tran">=></div>
+        </div>
+        <textarea id="t2"></textarea>
+        <div id="sample"></div>
+    </div>
+
+    <script>
+
+        document.getElementById('tran').addEventListener('click', function () {
+            go();
+        }, false);
+
+        function go() {
+
+            var t = document.getElementsByTagName('textarea')[0];
+            var text = t.value;
+
+            var safe = 0;
+            var output = "";
+            var rows = [];    // 所有行
+            var columns = [];  // 所有列
+            var allCells = [];  // 所有单元格
+            var topth = document.getElementById('number1').value;    // 顶部列头个数
+            var leftth = document.getElementById('number2').value;   // 左侧列头个数
+            var r = '';          // 临时的字符串变量
+
+
+            r += text;
+            var index = r.indexOf('\n');
+            while (index >= 0) {
+                var line = r.substring(0, index);
+                r = r.substring(index + 1);
+                func(line);
+                index = r.indexOf('\n');
+                if (safe++ > 1000) throw new Error();
+            }
+
+
+
+
+            function Cell() {
+                this.merged = false;   // 单元格是否被合并
+                this.empty = false;    // 被合并掉的单元格，以及空的单元格，其empty值都为true
+                this.th = false;       // 是否为列头
+                this.text = '';
+                this.rowspan = 1;
+                this.colspan = 1;
+                this.rowIndex;         // 处于第几行
+                this.colIndex;         // 处于第几列
+
+                this.rightCells = [];
+                this.bottomCells = [];
+                this.leftCell = null;
+                this.topCell = null;
+            }
+
+            function Row() {
+                this.cells = [];
+            }
+
+            function Column() {
+                this.cells = [];
+            }
+
+            function func(line) {
+                var cells = line.split(/\t/);
+
+                var row = new Row();
+
+                for (var i = 0; i < cells.length; i++) {
+                    var text = cells[i].trim();
+                    var cell = new Cell();
+                    cell.empty = text == '';
+                    cell.text = text;
+                    cell.rowIndex = rows.length;
+                    cell.colIndex = i;
+
+                    row.cells.push(cell);
+
+                    var column;
+                    if (columns[i] instanceof Column) {
+                        column = columns[i];
+                    } else {
+                        column = new Column();
+                        columns[i] = column;
+                    }
+                    column.cells.push(cell);
+
+                    allCells.push(cell);
+                }
+
+                rows.push(row);
+            }
+
+            function isth(cell) {
+                return cell.rowIndex < topth || cell.colIndex < leftth;
+            }
+
+            // 计算单元格的上下左右邻居，为后续合并计算做准备
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].cells;
+                var left = null;
+                for (var j = 0; j < cells.length; j++) {
+                    cells[j].leftCell = left;
+                    left = cells[j];
+                    cells[j].rightCells = cells.slice(j + 1);
+                }
+            }
+
+            for (var i = 0; i < columns.length; i++) {
+                var cells = columns[i].cells;
+                var top = null;
+                for (var j = 0; j < cells.length; j++) {
+                    cells[j].topCell = top;
+                    top = cells[j];
+                    cells[j].bottomCells = cells.slice(j + 1);
+                }
+            }
+
+          
+
+            // 计算合并单元格
+            for (var i = 0; i < allCells.length; i++) {
+
+                var cell = allCells[i];
+
+                if (cell.merged) continue;
+
+                for (var j = 0; j < cell.rightCells.length; j++) {
+
+                    var p = cell.topCell;
+                    var safeloop = 0;
+                    while (p && p.merged) {
+                        p = p.leftCell;
+                        if (safeloop++ > 100) throw new Error();
+                    }
+
+                    if (cell.rightCells[j].empty && isth(cell.rightCells[j]) && (!p || (cell.colIndex + cell.colspan < p.colIndex + p.colspan))) {
+                        cell.colspan++;
+                        cell.rightCells[j].merged = true;
+                    }
+                    else break;
+                }
+
+                for (var j = 0; j < cell.bottomCells.length; j++) {
+
+                    var p = cell.leftCell;
+                    var safeloop = 0;
+                    while (p && p.merged) {
+                        p = p.topCell;
+                        if (safeloop++ > 100) throw new Error();
+                    }
+
+                    if (cell.bottomCells[j].empty && isth(cell.bottomCells[j]) && (!p || (cell.rowIndex + cell.rowspan < p.rowIndex + p.rowspan))) {
+                        cell.rowspan++;
+                        cell.bottomCells[j].merged = true;
+
+                        if (cell.colspan > 1) {
+          
+                            for (var k = 0; k < cell.colspan-1; k++) {
+                                cell.bottomCells[j].rightCells[k].merged = true;
+                            }
+                        }
+                    }
+                    else break;
+                }
+            }
+
+            // 生成table代码
+            output += "<table class='report";
+
+            if (leftth > 0) {
+                output += " left-head";
+            }
+
+            output += "'>";
+            var odd = true; // 奇数行
+            for (var i = 0; i < rows.length; i++) {
+
+                output += "<tr";
+
+                if (i >= topth) {
+                    var cls = odd ? "odd" : "even";
+                    odd = !odd;
+                    output += ' class="' + cls + '"';
+                }
+
+                output += ">";
+
+                for (var j = 0; j < rows[i].cells.length; j++) {
+                    var cell = rows[i].cells[j];
+                    if (cell.merged) continue;
+                    var isth = (i < topth) || (j < leftth);
+
+                    var elementName = isth ? "th" : "td";
+
+                    output += "<" + elementName;
+
+                    if (cell.rowspan > 1) {
+                        output += " rowspan=" + '"' + cell.rowspan + '"';
+                    }
+                    if (cell.colspan > 1) {
+                        output += " colspan=" + '"' + cell.colspan + '"';
+                    }
+
+                    output += ">";
+
+                    output += cell.text;
+
+                    output += "</" + elementName + ">";
+                }
+
+                output += "</tr>\n";
+            }
+            output += "</table>"; 
+
+            document.getElementById('t2').value = output;
+            document.getElementById('sample').innerHTML = output;
+
+        }
+
+
+    </script>
+</body>
+</html>  
