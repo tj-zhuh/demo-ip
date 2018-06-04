@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>计划跟踪监控</title>
+    <link href="../../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>日计划完成情况</p></div>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+
+
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>月计划完成情况</p></div>
+            <div class="chart-container" id="chart2"></div>
+        </div>
+
+
+        <div class="panel" id="panel3">
+            <div class="panel-title"><p>指标月度趋势</p></div>
+            <div class="chart-container" id="chart3"></div>
+        </div>
+
+        <div class="panel" id="panel4">
+            <div class="panel-title"><p>报表</p></div>
+            <div class="grid-container" id="grid1">
+                <table class='report'>
+                    <tr><th rowspan="3">完成情况/指标</th><th rowspan="3">铜精矿处理量</th><th rowspan="3">矿铜量</th><th rowspan="3">渣精矿</th><th rowspan="3">石英砂</th><th rowspan="3">合格阳极铜</th><th colspan="5">铜原料进厂(实物量)</th><th rowspan="3">硫酸100%</th><th rowspan="3">动力发电量</th><th rowspan="3">阴极铜</th><th rowspan="3">选矿处理</th><th rowspan="3">阳极泥处理量(干量)</th></tr>
+                    <tr><th colspan="2">粗铜</th><th colspan="3">铜精矿</th></tr>
+                    <tr><th>国内</th><th>进口</th><th>国内</th><th>紫金山</th><th>进口</th></tr>
+                    <tr><th>单位</th><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td></td><td>t</td><td>t</td><td>t</td></tr>
+                    <tr><th>日实际完成</th><td>2829.07</td><td>877.83</td><td>198.74</td><td>339.47</td><td>1070.73</td><td>0</td><td>0</td><td>0</td><td>1220.9</td><td>3047.2</td><td>2296.25</td><td>5.47</td><td>961.91</td><td>800</td><td>11.41</td></tr>
+                    <tr><th>日计划</th><td>2766.67</td><td>683.33</td><td>266.67</td><td></td><td>1000</td><td>33.84</td><td>63.78</td><td>166.48</td><td>676.33</td><td>147.62</td><td>2694.33</td><td>3.33</td><td>800</td><td>0.18</td><td>8</td></tr>
+                    <tr><th>当日超欠</th><td>62.4</td><td>194.5</td><td>-67.93</td><td>339.47</td><td>70.73</td><td>-33.84</td><td>-63.78</td><td>-166.48</td><td>544.57</td><td>2899.58</td><td>-398.08</td><td>2.14</td><td>161.91</td><td>799.82</td><td>3.41</td></tr>
+                    <tr><th>月计划</th><td>83000.1</td><td>20499.9</td><td>8000.1</td><td></td><td>30000</td><td>1015.2</td><td>1913.4</td><td>4994.4</td><td>20289.9</td><td>4428.6</td><td>80829.9</td><td>99.9</td><td>24000</td><td>5.4</td><td>240</td></tr>
+                    <tr><th>计划完成</th><td>69166.75</td><td>17083.25</td><td>6666.75</td><td>0</td><td>25000</td><td>846</td><td>1594.5</td><td>4162</td><td>16908.25</td><td>3690.5</td><td>67358.25</td><td>83.25</td><td>20000</td><td>4.5</td><td>200</td></tr>
+                    <tr><th>月累计完成</th><td>66559.79</td><td>18003.82</td><td>4786.71</td><td>7042.97</td><td>22135.2</td><td>1175.06</td><td>0</td><td>5224.28</td><td>15803.56</td><td>31730.98</td><td>51297.07</td><td>111.83</td><td>17781.82</td><td>17600</td><td>7155.12</td></tr>
+                    <tr><th>月完成超欠</th><td>-2606.96</td><td>920.57</td><td>-1880.04</td><td>7042.97</td><td>-2864.8</td><td>329.06</td><td>-1594.5</td><td>1062.28</td><td>-1104.69</td><td>28040.48</td><td>-16061.18</td><td>28.58</td><td>-2218.18</td><td>17595.5</td><td>6955.12</td></tr>
+                
+                    <tr><th rowspan="2">完成情况/指标</th><th rowspan="2">干精矿品位</th><th rowspan="2">冰铜品位</th><th rowspan="2">FF投料量</th><th rowspan="2">FF作业率</th><th rowspan="2">残极处理</th><th rowspan="2">残极处理累计</th><th colspan="3">锢铍处理量</th><th rowspan="2">转炉炉次</th><th rowspan="2">稀酸浓度</th><th rowspan="2">尾矿销售</th><th colspan="2">电解槽数</th><th rowspan="2">污水处理量</th></tr>
+                    <tr><th>产出</th><th>处理</th><th>结存</th><th>装</th><th>出</th></tr>
+                    <tr><th>单位</th><td>%</td><td>%</td><td>t/h</td><td>%</td><td>t</td><td>t</td><td>t</td><td>t</td><td>t</td><td>炉</td><td>%</td><td>t</td><td>槽</td><td>槽</td><td>t</td></tr>
+                    <tr><th>当日完成</th><td>20.4</td><td>56.05</td><td>120.09</td><td>100</td><td></td><td></td><td>527.5</td><td>244.56</td><td>6150.22</td><td>3.82</td><td>4.81</td><td>3264.86</td><td>30</td><td>120</td><td>412.7</td></tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <script src="../../../../../js/rem.js"></script>
+    <script src="../../../../../js/config.js"></script>
+    <script src="../../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

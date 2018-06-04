@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运行状态检测</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../css/mtree.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>功能位置</p></div>
+            <div class="mtree">
+            </div>
+        </div>
+        <div class="panel" id="panel2">
+            <div class="panel-title ttab"><p class="active">评价结果</p><p>评价报表</p><p>原始数据</p></div>
+            <div class="elseRight">
+                <ul class="query-conditions">
+                    <li><label>位置名称</label><input value="F2风机"/></li>
+                    <li><label>评价时间</label><input value="2016-8-28" /></li>
+                    <li><label>转速</label><input value="1490.0" /></li>
+                    <li><label>累计运行时间</label><input value="1235" /></li>
+
+                </ul>
+                <ul class="query-conditions">
+
+                    <li><label style="float:left;">评价状态</label><div style="float: left; width: 1.43rem; height: 1.1rem; border: solid 1px #436382; text-align: center; line-height: 1rem; color: #00C89D; font-weight: 600; font-size: 0.3rem;">可用</div></li>
+                    <li><label style="position:relative;top:-0.84rem;">处理意见</label><textarea style="width:8rem;height:1rem;">F2风机-输出端垂直振动--径向振动大，请关注转子平衡问题</textarea></li>
+                </ul>
+                <hr style="width: 100%; margin-top: 0.1rem; margin-bottom: 0.1rem; border-color: #436382;" />
+
+                <ul class="query-buttons">
+                    <li><div class="btn">生成缺陷</div></li>
+                    <li><div class="btn" id="quexian">查看缺陷</div></li>
+                </ul>
+
+                <ul class="tab-titles" id="tabs">
+                    <li class="active"><div>震动评价</div></li>
+                    <li><div>工艺评价</div></li>
+                    <li><div>电气评价</div></li>
+                    <li><div>点检评价</div></li>
+
+                </ul>
+
+                <div class="charts-container">
+                    <div class="yitiaochart">
+                        <div class="paitoulabel">幅值</div>
+                        <div class="chart-container" id="chart1">
+                            <!--<div class="barContainer"><div class="bar"></div></div>-->
+                            <!--<div class="barContainer"><div class="bar"></div></div>-->
+                        </div>
+                        <div class="chart-container" id="chart2"></div>
+                        <div class="chart-container" id="chart3"></div>
+                        <div class="chart-container" id="chart4"></div>
+                        <ul class="bottom-labels">
+                            <li><label>径向RMS值(最大)</label></li>
+                            <li><label>驱动端低频段(6-15X)</label></li>
+                            <li><label>驱动端中频段(15-50X)</label></li>
+                            <li><label>驱动端高频段(50X以上)</label></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="yitiaochart">
+                        <div class="paitoulabel">幅值</div>
+                        <div class="chart-container" id="chart5"></div>
+                        <div class="chart-container" id="chart6"></div>
+                        <div class="chart-container" id="chart7"></div>
+                        <div class="chart-container" id="chart8"></div>
+                        <ul class="bottom-labels">
+                            <li><label>径向RMS值(最大)</label></li>
+                            <li><label>驱动端低频段(6-15X)</label></li>
+                            <li><label>驱动端中频段(15-50X)</label></li>
+                            <li><label>驱动端高频段(50X以上)</label></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--注意现在还暂时不做翻页，预留位置-->
+                <div class="pagin"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

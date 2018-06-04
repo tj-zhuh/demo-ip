@@ -1,0 +1,36 @@
+﻿.panel {
+    height:auto;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.tb-link {
+    color :blue;
+    text-decoration:underline;
+    /*width:0.2rem;
+    height:0.2rem;
+    background-color:blue;*/
+}
+
+.tb-levels {
+	height: 100%;
+	width: 100%;
+	color: #000;
+	background-color: yellow;
+	/*border-bottom: 1px solid gray;*/
+}
+
+.bleft {
+    float:left;
+    height:6rem;
+}
+
+.bright {
+    float:left;
+    height:6rem;
+    margin-left:1%;
+}
+
+img {
+    height:6rem;
+}

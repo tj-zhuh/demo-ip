@@ -1,0 +1,118 @@
+﻿
+
+.container {
+    background: no-repeat;
+    background-image: url(imgs/背景.png);
+    width: 19.05rem;
+    height: 9.15rem;
+    position: relative;
+    background-size:100%;
+}
+
+.train {
+    position:absolute;
+}
+
+.train li {
+    width: 0.31rem;
+    height: 0.2rem;
+    background-size: 100% 100%;
+    float:left;
+}
+
+.train.out li {
+    float:right;
+}
+
+.car{
+    cursor:pointer;
+}
+
+.train-head {
+    background-image: url(imgs/火车头.png);
+}
+
+.train.out .train-head {
+    background-image: url(imgs/火车头.png);
+}
+
+.warm.t1 {
+    background-image: url(imgs/保温车.png);
+}
+
+.warm.t2 {
+    background-image: url(imgs/保温车红.png);
+}
+
+.warm.t3 {
+    background-image: url(imgs/保温车蓝.png);
+}
+
+.warm.t4 {
+    background-image: url(imgs/保温车黄.png);
+}
+
+.box.t1 {
+    background-image: url(imgs/集装箱.png);
+}
+
+.box.t2 {
+    background-image: url(imgs/集装箱红.png);
+}
+
+.box.t3 {
+    background-image: url(imgs/集装箱蓝.png);
+}
+
+.box.t4 {
+    background-image: url(imgs/集装箱黄.png);
+}
+
+.s.t1 {
+    background-image: url(imgs/硫酸车.png);
+}
+
+.s.t2 {
+    background-image: url(imgs/硫酸车红.png);
+}
+
+.s.t3 {
+    background-image: url(imgs/硫酸车蓝.png);
+}
+
+.s.t4 {
+    background-image: url(imgs/硫酸车黄.png);
+}
+
+.oil.t1 {
+    background-image: url(imgs/油罐车.png);
+}
+
+.oil.t2 {
+    background-image: url(imgs/油罐车红.png);
+}
+
+.oil.t3 {
+    background-image: url(imgs/油罐车蓝.png);
+}
+
+.oil.t4 {
+    background-image: url(imgs/油罐车黄.png);
+}
+
+ #tooltip{
+     /*width:2rem;*/
+     /*height:3.5rem;*/
+     padding:0.1rem;
+     padding-right:0.5rem;
+     border:solid 1px #389edc;
+     background-color:rgba(99,99,99,1);
+     /*opacity:0.5;*/
+     font-weight:600;
+     color:#fff;
+     font-size:0.14rem;
+     position:absolute;
+ }
+ .hide{
+     margin-left:-9999px;
+ }

@@ -1,0 +1,46 @@
+﻿.panel {
+    float:left;
+    height:6rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.router {
+    width:14%;
+    min-height:4rem;
+    margin: 0.1rem 0 0 0.1rem;
+}
+
+.panel-grid {
+	width:70%;
+}
+
+.grid-router {
+	float: left;
+    width:10%;
+    margin-top: 0.1rem;
+}
+
+.grid-router ul li {
+    height:0.35rem;
+    padding-left: 0.1rem;
+    margin-top: 0.1rem;
+    line-height:0.35rem;
+    font-size: 12px;
+    cursor: pointer;
+    color:white;
+}
+
+.grid-router ul li.active {
+    background-color: #dfdfdf;
+    color: black;
+}
+
+.query-conditions li  {
+    margin-right: 0.3rem;
+}
+
+select,
+input {
+    width: 1.8rem;
+}

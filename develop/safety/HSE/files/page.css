@@ -1,0 +1,25 @@
+﻿.panel {
+    height:6.2rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.panel-tree {
+    float:left;
+    width:20%;
+}
+
+.panel-detail {
+    float:left;
+    width: 75%;
+    margin-left: 0.15rem;
+}
+
+.tb-link strong {
+    color :#00deb9;
+    text-decoration:underline;
+    margin-left:0.1rem;
+    /*width:0.2rem;
+    height:0.2rem;
+    background-color:blue;*/
+}

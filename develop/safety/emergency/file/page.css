@@ -1,0 +1,43 @@
+﻿
+
+#panel1{
+    float:left;
+    width:20%;
+    height:7.5rem;
+    margin-top:0;
+}
+
+#panel2{    
+    margin-left:21.5%;
+    height:7.5rem;
+    overflow:hidden;
+} 
+
+#panel3{ 
+    margin-top:0.5rem;
+    height:3rem;
+    clear:both;
+}
+
+#panel4{ 
+    margin-top:0.1rem;
+    height:2.95rem;
+
+}
+
+.panel textarea{
+    width:90%;
+    height:2.16rem;
+    border:none;
+    background-color:transparent;
+    color:#fff;
+} 
+
+.panel-title{
+    color: #bccae1;
+    font-size: 0.18rem;
+    font-family: 'Microsoft YaHei';
+    line-height: 0.41rem; 
+    padding-left: 0.25rem;
+}
+

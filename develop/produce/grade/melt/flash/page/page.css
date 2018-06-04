@@ -1,0 +1,30 @@
+﻿
+.panel{
+    margin-top:0;
+}
+
+#panel1{
+    width:68%;
+    float:left;
+    margin-bottom:0.1rem;
+    height:3.2rem;
+}
+
+#panel2{
+    /*width:29.8%;*/
+    /*float:right;*/
+    margin-bottom:0.1rem;
+    margin-left:69.3%;
+    height:3.2rem;
+    margin-top:0.1rem;
+}
+#panel3{
+    height:3.5rem;
+    clear:both;
+    float:none;
+
+}
+
+.panel .grid-container{
+    clear:none;
+}

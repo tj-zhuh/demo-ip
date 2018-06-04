@@ -1,0 +1,85 @@
+﻿.topPanel {
+	height:8rem;
+}
+.window {
+	position:absolute;
+	width:14rem;
+	height:6.5rem;
+	top:0.5rem;
+	left:2.5rem;
+	border:solid 1px #cdcdcd;
+	z-index:999;
+	background-color: #06121d;
+}
+.panel-image {
+	height:7.59rem;
+	background:url(../../../../images/网络图2.png) no-repeat;
+	background-size:100% 100%;
+}
+.window .window-head {
+	width:100%;
+	height:0.5rem;
+    color: white;
+	background-color:#436382;
+}
+.window .window-head p {
+	padding-top:0.1rem;
+	padding-left:0.1rem;
+}
+.window #window-grid {
+	width:6.8rem;
+	height:5.8rem;
+	float:left;
+	border:solid 1px #cdcdcd;
+	margin:0.1rem 0.05rem 0.1rem 0.1rem;
+}
+.window .window-detail {
+	width:6.8rem;
+	height:5.8rem;
+	float:right;
+	border:solid 1px #cdcdcd;
+	margin:0.1rem 0.1rem 0.1rem 0.05rem;
+}
+.window .window-detail .detail-head {
+    color: white;
+	width:6.8rem;
+	height:0.6rem;
+}
+.window .window-detail .detail-charts {
+	width:6.8rem;
+	height:5.2rem;
+}
+.window .window-detail .detail-head .day {
+	width:1.685rem;
+	height:0.6rem;
+	border-left:solid 1px #cdcdcd;
+	border-bottom:solid 1px #cdcdcd;
+	float:left;
+}
+.window .window-detail .detail-head .day div {
+	border-bottom:solid 1px #cdcdcd;
+	font-weight:700;
+	height:0.3rem;
+	line-height:0.3rem;
+	text-align:center;
+}
+.day-list li {
+	height:0.3rem;
+	width:0.24rem;
+	float:left;
+}
+/* 模态窗口 */
+.opacity-div-for-modelwin { background: rgba(0, 0, 0, 0.45); z-index: 998; position: fixed; left: 0; top: 0; right: 0; bottom: 0; }
+.hide { display:none;}
+
+th.tj-grid-th{
+    border-top:none;
+}
+
+
+td.tj-grid-td{
+    /*border-bottom:solid 1px #ccc;*/
+}
+
+
+

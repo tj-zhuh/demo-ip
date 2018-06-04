@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="p4c.css">
+    <style>
+        .p4b-img {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .p4b-img cite {
+            display: inline-block;
+        }
+
+        #b1 {
+            width: 96px;
+            height: 31px;
+            background-image: url(b1.png);
+            cursor: pointer;
+            /*margin-right: 10px;*/
+        }
+
+        #b1.active {
+            background-image: url(b1-active.png);
+            cursor: default;
+        }
+
+        #b2 {
+            width: 96px;
+            height: 31px;
+            background-image: url(b2.png);
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        #b2.active {
+            background-image: url(b2-active.png);
+            cursor: default;
+        }
+
+        .tb-title {
+            clear: both;
+            margin-top: 5px;
+            height: 25px;
+            font-size: 20px;
+            font-family: SimHei;
+            color: #32e6e9;
+            text-align: center;
+            background-color: rgba(76,160,223,0.2);
+            border-top: 1px solid #479FDF;
+            border-bottom: 1px solid #479FDF;
+        }
+    </style>
+</head>
+<body>
+    <div class="p4b-img">
+        <cite id="b1" class="active"></cite>
+        <cite id="b2"></cite>
+    </div>
+    <div class="tb-title">
+        配料优化
+    </div>
+    <table id="table1" style="border-bottom: dashed 1px #0d99d1;" cellpadding="0">
+        <tr>
+            <th>序号</th>
+            <th>料名</th>
+            <th>库存</th>
+            <th>Cu</th>
+            <th>S</th>
+        </tr>
+        <tr><td>1</td><td>澳矿</td><td>1000</td><td>29</td><td>29</td></tr>
+        <tr><td>2</td><td>自产矿</td><td>700</td><td>28</td><td>28</td></tr>
+        <tr><td>3</td><td>地方矿</td><td>2000</td><td>24</td><td>24</td></tr>
+        <tr><td>4</td><td>氧化矿</td><td>1500</td><td>19</td><td>19</td></tr>
+    </table>
+    <table cellpadding="0">
+        <tr><th>序号</th><th>料名</th><th>比例</th></tr>
+        <tr><td>1</td><td>澳矿</td><td>38</td></tr>
+        <tr><td>2</td><td>自产矿</td><td>10</td></tr>
+        <tr><td>3</td><td>地方矿</td><td>19</td></tr>
+    </table>
+	<script src="../../../../../../../js/modules/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="p4c.js"></script>
+</body>
+</html>

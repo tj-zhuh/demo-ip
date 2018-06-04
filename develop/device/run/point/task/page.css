@@ -1,0 +1,17 @@
+﻿.panel {
+    height:auto;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.tb-link strong {
+    margin-left: 0.1rem;
+    color:#389edc;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+select,
+input {
+    width: 1.8rem;
+}

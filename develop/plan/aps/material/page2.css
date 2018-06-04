@@ -1,0 +1,9 @@
+﻿/*.container { height: 8rem; }
+.container .panel { height: 8rem; }*/
+
+ul.bar-content { }
+
+* ul { clear: both; }
+
+.tb-edit { margin-left: 15%; }
+.tb-delete { margin-left: 10%; }

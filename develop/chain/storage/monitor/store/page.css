@@ -1,0 +1,146 @@
+﻿
+#panel1 {
+    height:9rem;
+}
+
+#top-btns .t1,
+.t1 cite {
+    background-color:#e75654 ;
+}
+#top-btns .t2,
+.t2 cite  {
+    background-color:#d6ab57 ;
+}
+#top-btns .t3,
+.t3 cite  {
+    background-color:#a3bccb ;
+}
+#top-btns .t4,
+.t4 cite  {
+    background-color:#bba6cc ;
+}
+#top-btns .t5,
+.t5 cite  {
+    background-color:#e8a899 ;
+}
+
+#top-btns{
+    margin-top:0.2rem;
+    margin-left:0.15rem;
+}
+
+#top-btns li{
+    width:0.45rem;
+    height:0.27rem;
+    text-align:center;
+    font-size:0.15rem;
+    font-weight:bold;
+    color:#fff;
+    line-height:0.27rem;
+    float:left;
+    margin-right:0.1rem;
+}
+
+
+.stores {
+    clear:both;
+}
+
+.stores li {
+    width: 4rem;
+    height:3.6rem;
+    float: left;
+    margin-left: 0.15rem; 
+    margin-top: 0.18rem;
+    border: 1px solid #bdbdbd;
+    
+}
+
+.stores .title {
+    border-bottom:1px solid #bdbdbd;
+    background-color:#1b2f4f;
+    font-size:0.18rem;
+    font-family:SimSun;
+    color:#bccae1;
+    height:0.4rem;
+    line-height:0.4rem;
+    padding-left:0.2rem;
+    font-weight:600;
+}
+
+.stores img {
+    width:2.54rem;
+    height:1.08rem;
+    margin-left: 20%;
+    margin-top: 0.5rem;
+    margin-bottom:0.5rem;
+}
+
+.stores p {
+    font-size:0.15rem;
+    font-family:SimSun;
+    color:#fff;
+    font-weight:bold;
+    padding-left:0.15rem;
+    height:0.3rem;
+    line-height:0.3rem;
+}
+
+.stores cite {
+    font-style:normal;
+    font-family:SimSun;
+    color:#fff;
+    font-weight:bold;
+    text-align:right;
+    padding-right:0.1rem;
+    display:block;
+    height:0.3rem;
+    line-height:0.3rem;
+    margin-left:0.15rem;
+    margin-right:0.15rem;
+    cursor:pointer;
+    width:0;
+}
+
+#win{
+    position:absolute;
+    top:1rem;
+    left:2rem;
+    z-index:9;
+    width:13rem;
+    height:5rem;
+}
+
+.mo{
+    position:fixed;
+    top:0;
+    height:100%;
+    width:100%;
+    z-index:8;
+    background-color:#000;
+    opacity:0.5;
+}
+
+.hide{
+    margin-left:-9999px;
+}
+
+#chart{
+    height:4.5rem;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+
+
+
+
+
+
+}
+
+
+#btn3,
+#btn5,
+#btn6,
+#btn8{
+    color:#000;
+}

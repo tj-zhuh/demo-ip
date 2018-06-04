@@ -1,0 +1,55 @@
+﻿.panel {
+    height:7.5rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.panel-tree {
+    float:left;
+    width:20%;
+}
+
+.panel-detail {
+    float:left;
+    width: 75%;
+    margin-left: 0.15rem;
+}
+
+.panel-detail table {
+    width:100%;
+    margin-top:0.1rem;
+}
+
+.panel-detail tr {
+    height:0.45rem;
+}
+
+.panel-detail tr.text-area {
+    height: 0.8rem;
+}
+
+.panel-detail th {
+    width:20%;
+    text-align:right;
+    padding-right:0.5rem;
+}
+
+.panel-detail td {
+    width:20%;
+}
+
+.panel-detail td input{
+    height:0.3rem;
+    line-height:0.3rem;
+    min-width:3rem;
+    font-size:12px;
+}
+
+.panel-detail tr.text-area input {
+    height: 0.5rem;
+    width:93.5%;
+}
+
+.query-buttons {
+    margin-left:40%;
+}

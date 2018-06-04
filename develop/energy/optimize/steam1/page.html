@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>库存物资统计分析</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <!--<h1>用户管理</h1>-->
+    <div class="container">
+        
+        <div id="tips"></div>
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>监控提示区</p></div>
+            <div id="div1">
+                <ul>
+                    <li><div style="background-color: #ffb698; color: #862701;">高峰期</div><div><p>蒸汽:&nbsp;&nbsp;</p><p style="color:#ff2301;">8.9</p><p style="color:#ff2301;">&nbsp;&nbsp;Mpa</p></div></li>
+                    <li><div style="background-color: #a5dba4; color: #026b00;">平价期</div><div><p>抽汽:&nbsp;&nbsp;</p><p>8.9</p><p>&nbsp;&nbsp;Mpa</p></div></li>
+                    <li><div style="background-color: #9ad6e3; color: #0f7993;">低谷期</div><div><p>余热水:&nbsp;&nbsp;</p><p>8.9</p><p>&nbsp;&nbsp;Mpa</p></div></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>负荷调度区</p></div>
+            <ul class="select-btns" id="select-btns1">
+                <li class="active"><div>经济进行模式</div></li>
+                <li><div>季节进行模式</div></li>
+            </ul>
+            <ul id="fuhe">
+                <li><div>用电功率</div><div>2304kW</div></li>
+                <li><div>发电功率</div><div>2301kW</div></li>
+                <li><div>目标功率</div><div>2304kW</div></li>
+                <li><div style="color: #00edb9;text-decoration:underline;cursor:pointer;" id="zhixinggonglv">执行功率</div><div>2304kW</div></li>
+            </ul>
+        </div>
+
+        <div class="panel" id="panel3">
+            <!--<div class="panel-title"><p>标题</p></div>-->
+            <ul class="select-btns" id="select-btns2">
+                <li class="active"><div>当班</div></li>
+                <li><div>当天</div></li>
+                <li><div>当月</div></li>
+            </ul>
+            <div class="grid-container" id="grid1">
+                <table class="report">
+                    <tr><th></th><th>用电</th><th>发电</th><th>购电</th><th>上网</th></tr>
+                    <tr><th>高峰</th><td>1325</td><td>1001</td><td>525</td><td>201</td></tr>
+                    <tr><th>评价</th><td>902</td><td>532</td><td>820</td><td>450</td></tr>
+                    <tr><th>低谷</th><td>1045</td><td>350</td><td>1350</td><td>605</td></tr>
+                    <tr><th>累计</th><td>3272</td><td>1883</td><td>2695</td><td>1706</td></tr>
+
+                </table>
+            </div>
+
+        </div>
+
+        <div class="panel" id="panel4">
+            <div class="panel-title"><p>状态信息区</p></div>
+            <div class="grid-container" id="grid2">
+                <table class="report">
+                    <tr><th>设备</th><th>编号</th><th>设备状态</th><th>额定负荷(t/h)</th><th>实际负荷(t/h)</th><th>负荷率(%)</th><th>汽压Mpa</th><th>效率(%)</th><th>产汽量</th></tr>
+                    <tr><th rowspan="5">锅炉</th></tr>
+                    <tr><td>1</td><td>运行</td><td>210</td><td>173</td><td>82.38</td><td>9.05</td><td>99.85</td><td></td></tr>
+                    <tr><td>2</td><td>运行</td><td>180</td><td>197</td><td>109.44</td><td>9.17</td><td>99.84</td><td></td></tr>
+                    <tr><td>3</td><td>停机</td><td>160</td><td>0</td><td>0</td><td>0.08</td><td>0</td><td></td></tr>
+                    <tr><td>4</td><td>运行</td><td>200</td><td>179</td><td>89.5</td><td>9.18</td><td></td><td></td></tr>
+                    <tr><th>设备</th><th>编号</th><th>设备状态</th><th>额定功率Mw</th><th>最大功率Mw</th><th>实际功率Mw</th><th>最大进汽量(t/h)</th><th>进汽量(t/h)</th><th>耗汽量</th></tr>
+                    <tr><th rowspan="4">汽机</th></tr>
+                    <tr><td>1</td><td>运行</td><td>56</td><td>57</td><td>57.5</td><td>355.5</td><td>1#;158.76&nbsp;2#;158.08</td><td>13866</td></tr>
+                    <tr><td>2</td><td>运行</td><td>56</td><td>57</td><td>57.6</td><td>323.6</td><td>1#;158.76&nbsp;2#;158.08</td><td>450</td></tr>
+                    <tr><td>3</td><td>停机</td><td>20</td><td>22</td><td>6.6</td><td>150.1</td><td>1#;158.76&nbsp;2#;158.08</td><td>605</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel" id="panel5">
+            <!--<div class="panel-title"><p>标题</p></div>-->
+            <!--<ul class="query-buttons">
+                <li><div class="btn">用电</div></li>
+                <li><div class="btn">发电</div></li>
+                <li><div class="btn">购电</div></li>
+                <li><div class="btn">上网</div></li>
+            </ul>-->
+            <ul class="select-btns" id="select-btns3">
+                <li class="active"><div>用电</div></li>
+                <li><div>发电</div></li>
+                <li><div>购电</div></li>
+                <li><div>上网</div></li>
+            </ul>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="../../../../js/rem.js"></script>
+
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

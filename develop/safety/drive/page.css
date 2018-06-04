@@ -1,0 +1,16 @@
+﻿.panel {
+    float:left;
+    height:5rem;
+    width: 47%;
+    margin: 1% 0 0 1%;
+}
+
+.chart-container {
+    height:100%;
+}
+
+.panel1,
+.panel2 {
+    height:6rem;
+}
+

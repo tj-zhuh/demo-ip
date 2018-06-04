@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>采购物料判定管理</title>
+    <link href="../../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>进厂物料检验判定</p></div>
+            <ul class="query-conditions">
+                <li class="forDate"><label>到货日期</label><input/>&#12288-&#12288</li>
+                <li><input/></li>
+                <li><label>供应商</label><input /></li>
+                <li><label>物料名称</label><input /></li>
+                <li><label>样品编号</label><input /></li>
+            </ul>
+            <div class="grid-container" id="grid1"></div>
+            <!--预留位置,暂不维护-->
+            <div class="pagein"></div>
+        </div>
+       
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>检验批次</p></div>
+            <!--<ul class="query-conditions">
+                <li><label>条件一</label><input /></li>
+                <li><label>条件二</label><input /></li>
+            </ul>-->
+            <div class="grid-container" id="grid2"></div>
+            <!--预留位置,暂不维护-->
+            <div class="pagein"></div>
+        </div>
+
+    </div>
+
+    
+    <script src="../../../../../js/rem.js"></script>
+    <script src="../../../../../js/config.js"></script>
+    <script src="../../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

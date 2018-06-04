@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>环境监测</title>
+
+    <link href="../../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <!--<div class="panel">
+            <div class="panel-title"><p>登录</p></div>
+            <ul class="query-conditions">
+                <li>
+                    <label>登录账号</label>
+                    <select>
+                        <option>721866836-9</option>
+                    </select>
+                </li>
+                <li>
+                    <label>登录密码</label>
+                    <input value="******" />
+                </li>
+                <li>
+                    <label>账号类型</label>
+                    <select>
+                        <option>硫酸/环境集烟</option>
+                    </select>
+                </li><li>
+                <li><div class="btn" id="btn1">登录</div></li>
+                <li><div class="btn-auto" >自动登录</div></li>
+                <li><div class="btn" id="btn2">修改账号</div></li>
+
+            </ul>
+        </div>-->
+        <div class="panel">
+            <div class="panel-title"><p>采集主数据</p></div>
+            <ul class="query-conditions">
+                <li>
+                    <label>查询日期</label>
+                    <select>
+                        <option>201706</option>
+                        <option>201707</option>
+                    </select>
+                </li>
+                <li>
+                    <label>点位类型</label>
+                    <select>
+                        <option>全部</option>
+                    </select>
+                </li>
+                <li>
+                    <label>采集日期</label>
+                    <select>
+                        <option>2017/06/27</option>
+                        <option>2017/06/28</option>
+                        <option>2017/06/29</option>
+                    </select>
+                </li>
+                <li><div class="btn" id="btn2">查询</div></li>
+
+            </ul>
+
+            <div class="grid-container" id="grid1">
+                <table class='report'>
+                    <tr><th colspan="8">采集主数据</th></tr>
+                    <tr><th>日期</th><th>点位名称</th><th>二氧化碳（浓度 毫克/立方米）</th><th>二氧化碳（排放量 千克）</th><th>氮氧化物（浓度 毫克/立方米）</th><th>氮氧化物（排放量 千克）</th><th>烟尘（浓度 毫克/立方米）</th><th>含氧量（浓度 百分比）</th></tr>
+                    <tr class="odd"><td>2017/6/30</td><td>硫酸尾气排放口</td><td>205.441</td><td>175.327</td><td>5.98</td><td>5.104</td><td>8.97</td><td>14.135</td></tr>
+                    <tr class="even"><td>2017/6/29</td><td>硫酸尾气排放口</td><td>208.109</td><td>423.143</td><td>5.809</td><td>11.811</td><td>8.768</td><td>13.748</td></tr>
+                    <tr class="odd"><td>2017/6/29</td><td>环境集烟排放口</td><td>29.66</td><td>167.359</td><td>14.508</td><td>81.861</td><td>4.342</td><td>20.056</td></tr>
+                    <tr class="even"><td>2017/6/28</td><td>环境集烟排放口</td><td>20.29</td><td>194.25</td><td>19.238</td><td>184.176</td><td>5.019</td><td>20.211</td></tr>
+                    <tr class="odd"><td>2017/6/28</td><td>硫酸尾气排放口</td><td>211.108</td><td>430.482</td><td>7.53</td><td>15.355</td><td>9.008</td><td>12.988</td></tr>
+                    <tr class="even"><td>2017/6/27</td><td>硫酸尾气排放口</td><td>214.48</td><td>441.937</td><td>6.81</td><td>14.031</td><td>6.898</td><td>12.815</td></tr>
+                    <tr class="odd"><td>2017/6/27</td><td>环境集烟排放口</td><td>30.383</td><td>173.039</td><td>15.932</td><td>90.74</td><td>5.397</td><td>20.165</td></tr>
+                </table>
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel panel-chart">
+            <div class="panel-title"><p>环境集烟排放口</p></div>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+        <div class="panel panel-chart">
+            <div class="panel-title"><p>硫酸尾气排放口</p></div>
+            <div class="chart-container" id="chart2"></div>
+        </div>
+    </div>
+
+    <script src="../../../../../js/rem.js"></script>
+    <script src="../../../../../js/config.js"></script>
+    <script src="../../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

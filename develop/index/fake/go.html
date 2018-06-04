@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style>
+        textarea {
+            height: 800px;
+            width: 400px;
+            font-family:SimSun;
+            font-size:18px;
+            line-height:25px;
+            padding-left:55px;
+            float:left;
+        }
+        #tran {
+            border:1px solid #ccc;
+            width:100px;
+            height:100px;
+            font-size:30px;
+            text-align:center;
+            line-height:100px;
+            float:left;
+            margin-left:50px;
+            margin-right:50px;
+            margin-top:350px;
+            cursor:pointer;
+        }
+    </style>
+    <script>
+        var menus = "";
+    </script>
+</head>
+<body>
+    <textarea id="t1">
+工厂概览 overview
+ 工厂概览 overview
+ 生产概览 produce
+ 供应链概览 chain 
+ 设备概览 device
+ 能源概览 energy 
+ 安环概览 safety
+ 三维视图 view
+生产管控 produce
+ 计划管理 plan
+  计划编制 make
+   工作日历管理 
+   维修计划查询 
+   年计划管理 
+   月计划管理 month
+   日计划管理 
+   作业计划管理 
+  计划跟踪 track
+   计划跟踪监控 monitor
+   计划对比分析 
+  计划绩效 
+  计划平衡 
+ 调度管理 
+ 生产实绩 grade
+  全场生产实绩总览 
+  熔炼车间实绩 melt
+   车间实绩总览 
+   车间辅助决策 
+   配料优化 match
+   闪速熔炼实绩 flash
+    #生产实绩 page
+    #班次数据 
+    #放铜 
+    #放渣 
+    #样品信息与结果 
+    #配料单查询 
+    #配料仓配置 
+   转炉吹炼实绩 
+   卡尔多炉实绩 
+   阳极炉实绩 
+   样品检测结果 
+   熔炼班组报表 
+   熔炼工段报表 
+   熔炼车间报表 
+  电解车间实绩 
+  倾动炉车间实绩 
+  一车间实绩 
+  新材料车间实绩 
+  硫酸车间实绩 
+  备料车间实绩 
+  选矿车间实绩 
+  动力车间实绩 
+ 现场人员管理 
+ 质量管理 qa
+  基础数据管理 
+  质量检验管理 
+  质量判定管理 judge
+   采购物料判定管理 buy
+   阳极铜判定管理 
+   主产品判定管理 
+   副产品判定管理 
+   质保书管理 
+  质量过程监控 
+  质量追溯 
+  质量统计分析 
+  质量体系管理 
+ 计量管理 
+ 检化验管理 check
+  检验标准管理 
+  检验业务管理 business
+   合同评审 
+   样品受理 
+   任务指派 
+   样品接收 
+   任务分配 dispatch
+   检验数据输入 
+   数据审核 
+   报告编制 
+   报告审核与签发 
+   报告发放
+  检验质量管理 
+  检验资源管理 
+  样品管理 
+  统计分析 
+ 数据管理驾驶舱 drive
+ 三维视图 view
+供应链管控 chain
+ 基础信息管理  
+  编码管理 
+   物料编码管理
+   备品备件编码
+   成品编码
+   中间物料编码
+   回收物料编码
+  物流建模 
+   仓库建模
+   物流建模
+   物资建模
+ 汽车运行调度管理 car
+  网上预约 
+  IC卡基础管理 
+  制卡开卡 
+  排号排队 
+  刷卡计量委托 
+  刷卡取样委托 
+  刷卡卸车 
+  刷卡装车 
+  刷卡出厂 
+  卡片回收 
+  汽车运输物流跟踪 track
+  统计报表 
+ 铁路运输调度管理 railway
+  基础信息管理 
+  原料信息预报 
+  运输计划管理 
+  信息交换管理 
+   微机连锁交换
+   车号识别交换
+   机车作业交换
+  车辆交接作业管理 
+   接车预约
+   接车作业计划
+   车辆接车
+  调车作业管理 
+   调车作业计划
+   计量、化验委托
+  车辆实时跟踪 
+  物流实时跟踪 track
+  自备车管理 
+  统计报表 
+  统计查询 
+ 厂内物流管理
+  物料供应 
+   供应计划
+   计划审核
+   计量确认
+   接收确认
+  物料回收 
+   回收计划
+   计划确认
+   计量确认
+   库存更新
+  物流转移 
+   倒运计划
+   移库确认
+   移库更新
+  场内物流计划跟踪
+ 智能仓储管理 storage
+  仓库基础信息 
+  入库管理 
+  出库管理 
+  盘库管理 
+  仓库监控 monitor
+   库存动态预测
+   库存实时监控 store
+   库存追踪
+   库位调整
+   库存报警
+  精矿配料管理 
+   原料信息预告
+   配料变更管理
+   配料优化分析
+  粗杂铜配料管理 
+  半成品管理 
+  成品管理 
+  中间物料管理 
+  车间材料仓库管理 
+   材料验收入库
+   材料出库
+   定期盘库
+   申请领用
+   材料跟踪
+  车间备件仓库管理
+   验收入库
+   备件出库
+   定期盘库
+   申请领用
+   备件跟踪
+  分析报表 
+   统计台帐
+   统计报表
+ 数据管理驾驶舱 drive
+ 三维视图 view
+设备管理 device
+ 设备基础管理 base
+  设备资产管理 assets
+  设备档案管理 
+  备品备件管理 
+ 设备运行管理 run
+  设备润滑管理 
+  设备点巡检 point
+   点检标准 
+   路线管理 
+   点检任务 task
+   点检结果 
+   漏检查询 
+   点检统计 
+  设备报警管理 
+  运行状态检测 status
+  智能评估和诊断 judge
+ 设备维护管理 maintain
+  设备故障管理 
+  设备维修管理 repair
+  设备投诉管理 
+ 设备综合分析 
+ 设备三维应用 
+ 设备数据管理驾驶舱 drive
+ 三维视图 view
+能源管理 energy
+ 能源基础管理 
+ 能源运行管理 run
+  数据采集 
+  能源综合监控 monitor
+   综合管网 all
+   天然气管网 
+   电力管网 
+   热力管网
+   氧气管网 
+   水力管网 
+  过程报警管理 
+  能效在线监控 online
+ 能源评价分析 analysis
+  统计报表 
+  能源基础分析 
+  能源绩效分析 
+  智能决策分析 
+  能源平衡分析 
+  能耗追踪分析 
+  能源成本分析 
+  能效指标分析 target
+ 能源优化调度 optimize
+  能源计划 
+  应急预案管理 
+  用电负荷优化 electric
+  工况模式优化 
+  蒸汽动力优化 steam1
+  优化方案 steam2
+ 能源数据管理驾驶舱 drive
+安环管控 safety
+ 安全风险管理 risk
+  危险源辨识 judge
+   危险源检查模板 
+   危险源辨识与查询 
+   作业票自动关联 
+   危险源评估管理 
+  风险分级管理 levels
+   风险基本信息 
+   风险评估管理 
+   风险评审管理 
+  危险源分布与监控 source
+   危险源跟踪与... 
+   重大危险源视... monitor
+   危险源评估结... 
+  特殊作业安全管理 
+   施工备案管理 
+   移动作业许可管理 
+ 环境保护管理 environment
+  环境因素分级管理 
+  环保地图 
+  环境监测 monitor
+  环保设施运行管理 
+  固废管理 
+  环保自动监测 auto
+   采集主数据 main
+   环境集烟排放口
+   硫酸尾气排放口
+   黄金冶炼厂排放口
+   数据合计汇总 total
+ 应急管理 emergency
+  应急预案管理 file
+  应急资源管理 
+  应急演练
+  应急响应与协同指挥 
+ HSE监督管理 HSE
+  文件管理 files
+  隐患管理 trouble
+  三同时管理 
+  职业卫生管理
+  事故事件管理 
+  教育培训 
+  特种设备 
+  危险化学品 
+ 监督监控 
+ 安全报警管理 alarm
+ 视频管理 
+ 数据管理驾驶舱 drive
+ 三维视图 view
+决策应用 decision
+ 绩效分析 analysis
+  绩效类别管理 
+  绩效参数管理 
+  绩效计划管理 
+  绩效指标考核与分析 target
+  绩效指标监控 
+  绩效考核在线审批 
+  绩效考核结果发布 
+  绩效考核结果申诉 
+ 技术经济分析 technology
+  技术经济对标体系指标管理 
+  技术经济指标预警级别设置 
+  技术经济指标预警参数设置 
+  技术经济指标异常分析 exception
+  技术经济对标综合评价 
+ 存货日管控 store
+  存货布局与状态查询 
+  存货预测 predicate
+  存货库龄分析 
+  存货异常预警及分析 
+ 金属平衡 balance
+  金属平衡表管理 
+  金属平衡偏差分析 error
+ 成本管控 cost
+  成本预算管理 
+  成本分析 analysis
+   财务分析 
+   自产分析 
+   销售分析 sale
+    #主页指标 param
+    #发展趋势 
+    #订单分析 
+   采购分析 
+   生产分析 
+   存货分析 
+   人力资源 
+   质量和安全 
+   风控分析 
+  成本绩效评价
+系统管理 system
+ 菜单管理 menu
+    </textarea>
+    <div id="tran">=></div>
+    <textarea id="t2"></textarea>
+    <script>
+
+        var t = document.getElementsByTagName('textarea')[0];
+        var text = t.value;
+
+        var r = '';
+        r += text;
+        var index = r.indexOf('\n');
+
+        var safe = 0;
+        var ids = [];
+        var output = "";
+        var firstLine = true;
+
+        add("define(function () {");
+        add("    var arr = [");
+
+
+        function add(str) {
+            output += str + "\n";
+        }
+
+        while (index >= 0) {
+            var line = r.substring(0, index);
+            r = r.substring(index + 1);
+            func(line);
+            index = r.indexOf('\n');
+
+            if (safe++ > 1000) throw new Error();
+        } 
+
+        function func(line) {
+            line = line.replace(/\s*$/, '');  // 删除右侧空格
+            var blanks = line.match(/^\s*/);  // 获取左侧空格
+            var num = blanks[0].length;  // 左侧空格的数目
+            var level = num / 1 + 1;  // 层级
+            line = line.replace(/^\s*/, ''); // 删除左侧空格
+            var name = line.match(/^[^\s]+/)[0]; // 获取名字
+            var folder = line.match(/[^\s]*$/)[0]; // 获取文件夹
+            var suspend = name == folder;
+            ids[level - 1] = (ids[level - 1] ? ids[level - 1] : 0) + 1;
+            ids.length = level;
+            var menuId = ids.join('-');
+            var parentId = level == 1 ? 'root' : ids.slice(0, ids.length - 1).join('-');
+
+            if (firstLine) {
+                add('        {');
+            } else {
+                add('        ,{');
+            }
+
+            add('            menuId: "' + menuId + '",');
+            add('            menuName: "' + name + '",');
+            add('            folder: "' + (suspend ? '404' : folder) + '",');
+            add('            parentId: "' + parentId + '"' + (suspend ? ',' : ''));
+            if (suspend)
+                add('            suspend: "' + 1 + '"');
+            add('    }');
+
+            firstLine = false;
+        }
+
+
+        add("    ];");
+
+        add('var tmp = []; var result = []; for (var i = 0; i < arr.length; i++) { var x = arr[i]; if (x.menuName.match(/^#/)) { tmp.push(x) } else { result.push(x) } } for (var i = 0; i < result.length; i++) { for (var j = 0; j < tmp.length; j++) { if (tmp[j].parentId == result[i].menuId) { result[i].tabs = result[i].tabs || ""; result[i].tabs += tmp[j].folder + tmp[j].menuName  + "," } } };return result;');
+
+        add("})");        
+
+        document.getElementById('t2').value = output;
+
+    </script>
+</body>
+</html>  

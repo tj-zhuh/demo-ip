@@ -1,0 +1,154 @@
+﻿
+
+
+#panel1 {
+    height: auto;
+    padding-bottom: 0.1rem;
+    float:left;
+    width:53.9%;
+    height:4.5rem;
+    margin-bottom:0.1rem;
+    margin-top:0;
+}
+
+
+#panel2 {
+    /*float: right;*/
+    /*width: 42.9%;*/
+    height: 4.5rem;
+    padding-bottom: 0.1rem;
+    margin-bottom:0.1rem;
+    margin-left:56%;
+
+}
+
+
+#panel3 {
+    /*width: 48.8%;*/
+    /*margin-top:0.1rem;*/
+    clear:both;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    height: 2.5rem;
+    padding-bottom: 0.1rem;
+}
+
+
+#grid1 {
+
+
+
+
+
+
+}
+
+#img-container{
+    float:left;
+    height:4.2rem;
+    width:80%;
+    margin-top:0.3rem;
+}
+
+img {
+    width:100%;
+}
+
+#legends{
+    margin-top:0.6rem;
+    float:right;
+    width:14%;
+    margin-left:1%;
+    margin-right:1%;
+    height:4.2rem;
+}
+
+.icon{
+    background:no-repeat;
+    width:0.5rem;
+    height:0.4rem;
+}
+
+.normal{background-image:url(../../../images/l-normal-icon.png);}
+.error{background-image:url(../../../images/l-error-icon.png);}
+.doing{background-image:url(../../../images/l-doing-icon.png);}
+.rewarn{background-image:url(../../../images/l-prewarn-icon.png);}
+.alert{background-image:url(../../../images/l-alert-icon.png);}
+
+#legends li p.normalp{color:#136f05;}
+#legends li p.errorp{color:#ae1105;}
+#legends li p.doingp{color:#1b7bb5;}
+#legends li p.rewarnp{color:#fc7200;}
+#legends li p.alertp{color:#ef3821;}
+
+
+
+
+#legends li{
+    clear:both;
+    height:0.6rem;
+}
+
+#legends li div{
+    float:left;
+}
+
+#legends li p{
+    color:#fff;
+    float:left;
+    line-height:0.35rem;
+}
+
+   
+
+
+
+#baojingshaicha{
+    margin-left:0.2rem;
+}
+
+#baojingshaicha li{
+    float:left;
+    width:3.7rem;
+    margin-top:0.4rem;
+}
+
+#baojingshaicha li label{
+    color:#c4d2e9;
+    font-size:0.15rem;
+    margin:0 0.1rem;
+}
+
+#baojingshaicha li label.withTextArea{
+    color:#c4d2e9;
+    position:relative;
+    top:-0.75rem;
+}
+
+#baojingshaicha li textarea{
+    width:2.28rem;
+    height:0.85rem;
+    border-color: #436382;
+    color:#fff;
+    font-size:0.15rem;
+    line-height: 0.15rem;
+    background-color:transparent;
+    /*text-indent:0.1rem;*/
+}
+
+#baojingshaicha li input{
+    width:1.6rem;
+    height:0.3rem;
+}
+
+/****************************************************/
+.report td.tb-alarm {
+    color:white;
+    background-color:red;
+    border-bottom:1px solid #ccc;
+}
+
+.grid-container .report tr.even{
+    background-color:#152742;
+}
+

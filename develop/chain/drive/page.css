@@ -1,0 +1,46 @@
+﻿
+.panel { 
+    width: 4.35rem; 
+    top: 1.2rem; 
+    float:left;
+}
+
+.panel1{
+    height:3rem;
+    /*width:2rem;*/
+}
+.panel2{
+    height:3rem;
+
+}
+.panel3{
+    height:3rem;
+
+}
+.panel4{
+    height:3rem;
+
+}
+.panel5{
+    height:3rem;
+
+}
+.panel8{
+    height:3rem;
+
+}
+.panel9{
+    height:3rem;
+
+}
+.panel10{
+    height:3rem;
+
+}
+
+
+#chart8 { width: 100%; height: 2.6rem;  }
+
+#chart9 { width: 100%; height: 2.6rem; }
+
+#chart10 { width: 100%; height: 2.6rem;  }

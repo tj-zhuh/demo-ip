@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>设备数据管理驾驶舱</title>
+
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="panel panel1">
+            <div class="panel-title"><p>设备(单位：台)</p></div>
+            <div id="chart1"></div>
+
+        </div>
+
+        <div class="panel panel2">
+            <div class="panel-title"><p>设备大修及停产通告信息栏</p></div>
+            <div class="topRight-msg">
+                <ul>
+                    <li><p>第三车间第二套设备大修公告</p><p>2017/05/30</p></li>
+                    <li><p>关于一车间暂时停产的公告</p><p>2017/05/18</p></li>
+                    <li><p>关于硫酸车间停产一日的公告</p><p>2017/05/16</p></li>
+                    <li><p>选矿车间选矿设备11号机故障公告</p><p>2017/05/15</p></li>
+                    <li><p>一车间第二套设备大修公告</p><p>2017/05/14</p></li>
+                    <li><p>倾动炉车间翻新公告</p><p>2017/05/12</p></li>
+                    <li><p>倾动炉车间预翻新公告</p><p>2017/05/10</p></li>
+                    <li><p>关于硫酸车间停产半日的公告</p><p>2017/05/03</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel panel3">
+            <div class="panel-title"><p>设备状态监测</p></div>
+            <div class="bottomLeft-img"></div>
+        </div>
+
+        <div class="panel panel4">
+            <div class="panel-title"><p>设备维修</p></div>
+            <ul class="horizontal-bar">
+                <li><div id="bBar1-1"></div><p>6</p></li>
+                <li><label>维修完成</label></li>
+                <li><div id="bBar1-2"></div><p>2</p></li>
+                <li><label>正在维修</label></li>
+                <li><div id="bBar1-3"></div><p>4</p></li>
+                <li><label style="color: #00edb9; text-decoration: underline; cursor: pointer; " id="jihuaweixiu">计划维修</label></li>
+            </ul>
+        </div>
+
+        <div class="panel panel5">
+            <div class="panel-title"><p>维修统计信息(单位：个)</p></div>
+            <div class="bottom-bar">
+                <ul>
+                    <li><label>设备紧固</label><div id="bBar2-1"></div><p>15</p></li>
+                    <li><label>设备润滑</label><div id="bBar2-2"></div><p>7</p></li>
+                    <li><label>零部件更换</label><div id="bBar2-3"></div><p>9</p></li>
+                    <li><label>报废更新</label><div id="bBar2-4"></div><p>15</p></li>
+                    <li><label>设备清洁</label><div id="bBar2-5"></div><p>5</p></li>
+                    <li><label>设备防腐</label><div id="bBar2-6"></div><p>18</p></li>
+                </ul>
+            </div>
+            <div id="chart2"></div>
+        </div>
+
+
+        <div style="width: 2rem; height: 0.4rem; line-height: 0.4rem; position: absolute; color: #00edb9; z-index: 7; top: 0.6rem; left: 7.2rem; text-decoration: underline;cursor:pointer; " id="touyonglv">设备投用率</div>
+
+
+    </div>
+
+
+    <script src="../../../js/rem.js"></script>
+
+    <script src="../../../js/config.js"></script>
+    <script src="../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

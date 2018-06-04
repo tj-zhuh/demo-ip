@@ -1,0 +1,20 @@
+﻿
+
+.doQuery{
+    background-image:url(../../../../images/btn-query.png);
+}
+
+.doQuery:hover{    
+    background-image:url(../../../../images/btn-query-hover.png);
+}
+
+.doQuery:active{
+    background-image:url(../../../../images/btn-query-active.png);
+}
+
+
+#grid1{height:4.82rem;}
+
+
+
+

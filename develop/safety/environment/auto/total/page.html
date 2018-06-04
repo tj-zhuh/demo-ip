@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>环境监测</title>
+    <link href="../../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+                <!--<div class="panel">
+            <div class="panel-title"><p>登录</p></div>
+            <ul class="query-conditions">
+                <li>
+                    <label>登录账号</label>
+                    <select>
+                        <option>721866836-9</option>
+                    </select>
+                </li>
+                <li>
+                    <label>登录密码</label>
+                    <input value="******" />
+                </li>
+                <li>
+                    <label>账号类型</label>
+                    <select>
+                        <option>硫酸/环境集烟</option>
+                    </select>
+                </li><li>
+                <li><div class="btn" id="btn1">登录</div></li>
+                <li><div class="btn-auto" >自动登录</div></li>
+                <li><div class="btn" id="btn2">修改账号</div></li>
+
+            </ul>
+        </div>-->
+        <div class="panel">
+            <div class="panel-title"><p>环境监测</p></div>
+            <ul class="query-conditions">
+                <li>
+                    <label>查询日期</label>
+                    <select>
+                        <option>2017年6月</option>
+                        <option>2017年7月</option>
+                    </select>
+                </li>
+                <li><div class="btn" id="btn2">查询</div></li>
+
+            </ul>
+
+
+            <div class="grid-container" id="grid1">
+                <table class='report' style="width: 100%; ">
+                    <tr><th colspan="5">数据合计汇总</th></tr>
+                    <tr><th>日期</th><th>二氧化硫排放总量（吨）</th><th>二氧化硫排放占比（%）</th><th>氮氧化物排放总量（吨）</th><th>氮氧化物排放占比（%）</th></tr>
+                    <tr class="odd"><td>6月19日</td><td>0.592767</td><td>75.39</td><td>0.193507</td><td>24.61</td></tr>
+                    <tr class="even"><td>6月20日</td><td>0.606135</td><td>76.78</td><td>0.183269</td><td>23.22</td></tr>
+                    <tr class="odd"><td>6月21日</td><td>0.762485</td><td>80.31</td><td>0.186913</td><td>19.69</td></tr>
+                    <tr class="even"><td>6月22日</td><td>0.656684</td><td>78.76</td><td>0.177118</td><td>21.24</td></tr>
+                    <tr class="odd"><td>6月23日</td><td>0.555508</td><td>79.44</td><td>0.143768</td><td>20.56</td></tr>
+                    <tr class="even"><td>6月24日</td><td>0.681067</td><td>77.45</td><td>0.198353</td><td>22.55</td></tr>
+                    <tr class="odd"><td>6月25日</td><td>0.660712</td><td>76.75</td><td>0.200184</td><td>23.25</td></tr>
+                    <tr class="even"><td>6月26日</td><td>0.415296</td><td>70.01</td><td>0.177879</td><td>29.99</td></tr>
+                    <tr class="odd"><td>6月27日</td><td>0.65998</td><td>82.58</td><td>0.139209</td><td>17.42</td></tr>
+                    <tr class="even"><td>6月28日</td><td>0.668577</td><td>74.26</td><td>0.231766</td><td>25.74</td></tr>
+                    <tr class="odd"><td>合计</td><td>6.259211</td><td></td><td>1.831966</td><td></td></tr>
+                </table>
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel">
+            <div class="panel-title"><p>趋势展示</p></div>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+    </div>
+
+    <script src="../../../../../js/rem.js"></script>
+    <script src="../../../../../js/config.js"></script>
+    <script src="../../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

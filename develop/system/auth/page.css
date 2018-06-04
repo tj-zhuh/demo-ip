@@ -1,0 +1,43 @@
+﻿
+.container .topbar{
+    height:38px;
+}
+
+ul.bar-content{}
+ul.bar-content li{
+    float:left;
+    width:220px;
+
+}
+ul.bar-content li label{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+ul.bar-content li input{
+    width:100px;
+}
+
+ul.bar-content li select{
+    width:100px;
+    height:22px;
+}
+
+.tb-edit{margin-left:37%;}
+.tb-delete{margin-left:10%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

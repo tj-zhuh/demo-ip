@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>环境监测</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-title"><p>统计</p></div>
+
+            <ul class="query-conditions">
+                <li>
+                    <label>更新时间</label>
+                    <select>
+                        <option>201707</option>
+                        <option>201708</option>
+                    </select>
+                </li>
+                <li><div class="btn" id="btn2">查询</div></li>
+
+            </ul>
+
+            <div class="grid-container" id="grid1">
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel">
+            <div class="panel-title"><p>数据</p></div>
+            <div class="grid-container" id="grid2">
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel bleft">
+            <img src="images/pic1.jpg" />
+        </div>
+        <div class="panel bright">
+            <img src="images/pic2.jpg" />
+        </div>
+    </div>
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

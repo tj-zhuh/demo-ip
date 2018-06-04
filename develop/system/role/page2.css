@@ -1,0 +1,59 @@
+﻿
+.doQuery{
+    background-image:url(../../../../images/btn-query.png);
+}
+
+.doQuery:hover{    
+    background-image:url(../../../../images/btn-query-hover.png);
+}
+
+.doQuery:active{
+    background-image:url(../../../../images/btn-query-active.png);
+}
+
+.panel{height:9rem;}
+
+
+#allSelect{
+    background:no-repeat;
+    float:left;
+    width:0.34rem;
+    height:0.4rem;
+    background-image:url(../../../images/icon-unchecked.png);
+    background-position:10% 50%;
+    cursor:pointer;
+}
+
+.ex-btn{}
+
+.ex-btn li .btn{
+    margin-top:0.01rem;
+}
+
+.ex-btn li{margin-right:0.3rem;float:left;}
+
+.bottom-btn{}
+
+.bottom-btn li .btn{
+    margin-top:0.01rem;
+}
+
+.bottom-btn li{margin-right:0.3rem;margin-left:0.2rem;float:left;margin-top:0.2rem;}
+
+
+.checkBox{
+    background-image:url(../../../images/icon-unchecked.png);
+
+}
+
+.checkBox.active{
+    background-image:url(../../../images/icon-checked.png);
+}
+
+
+
+
+
+
+
+

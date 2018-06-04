@@ -1,0 +1,41 @@
+﻿.panel {
+    float:left;
+    height:4rem;
+    margin: 1% 0 0 1%;
+}
+
+.panel1 {
+    width:30%;
+    height: 4rem;
+}
+
+.panel2 {
+    width:65%;
+    height: 4rem;
+}
+
+.panel3 {
+    width:60%;
+    height:3.7rem;
+}
+
+.panel4 {
+    width: 35%;
+    height:3.7rem;
+}
+
+.panel5 {
+    width: 96.8%;
+}
+
+.panel6 {
+    width:50%;
+}
+
+.panel7 {
+    width:45%;
+}
+
+.chart-container {
+    height:100%;
+}

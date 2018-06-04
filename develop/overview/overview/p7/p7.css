@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+
+.panel7-pic-image { float: left; /*margin-left: 250px;*/ margin-top: 0.25rem; width: 1.65rem; height:1rem; }
+.panel7-desc { float: left; margin-left: 0.15rem; width: 1rem; height: 1rem; line-height: 1rem; color: #48a1de; font-size:0.12rem; margin-top: 0.25rem;}
+#panel7-pic1 { margin-left:0.1rem; }
+#panel7-pic2 {}
+#panel7-pic3 {}
+#panel7-pic4 {}
+#panel7-pic5 {}
+#panel7-pic6 {}

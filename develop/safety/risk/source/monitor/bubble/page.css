@@ -1,0 +1,13 @@
+﻿.panel {
+    height:auto;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.tb-link {
+    color :blue;
+    text-decoration:underline;
+    /*width:0.2rem;
+    height:0.2rem;
+    background-color:blue;*/
+}

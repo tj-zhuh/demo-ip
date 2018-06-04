@@ -1,0 +1,9 @@
+* { margin: 0; padding: 0; }
+
+.options { float: left; width: 35%; height: 100px; margin-top: 90px; }
+.options span { font-size: 18px; color: white; cursor: pointer; height: 25px; padding: 0 7px;  }
+.options .active { background-color: #1ee7e9; color: black; border-radius: 12px;  }
+.options #depart { margin-left: 20px; }
+.options #day { margin-left: 20px; }
+
+#chart { float: left; width: 65%; height: 165px; margin-top: 34px; }

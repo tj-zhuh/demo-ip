@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>智能评估和诊断</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../lib/tb.css" rel="stylesheet" />
+    <link href="../../../../css/mtree.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>功能位置</p></div>
+            <div class="mtree">
+            </div>
+        </div>
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>评价结果</p></div>
+            <div class="elseRight">
+                <ul class="query-conditions">
+                    <li><div class="label">位置名称</div><input value="F2风机" /></li>
+                    <li><div class="label">评价时间</div><input value="2016-8-28" /></li>
+                    <li><div class="label">震动评价等级</div><input value="可用" /></li>
+                    <li><div class="label">工艺评价等级</div><input value="良好" /></li>
+                </ul>
+                <ul class="query-conditions">
+                    <li><div class="label">用电评价等级</div><input value="良好" /></li>
+                    <li><div class="label">点检评价等级</div><input value="良好" /></li>
+                    <li><div class="label">转速</div><input value="1490" /></li>
+                    <li><div class="label">累计运行时间</div><input value="1235" /></li>
+
+                </ul>
+                <ul class="query-conditions">
+
+                    <!--<li><label style="float:left;">评价状态</label><div style="float:left;width:1.43rem;height:1rem;border:solid 1px #ccc;"></div></li>-->
+                    <!--<li><label style="position:relative;top:-0.84rem;">处理意见</label><textarea style="width:8rem;height:1rem;">F2风机-输出端垂直振动--径向振动大，请关注转子平衡问题</textarea></li>-->
+                    <li><div class="label">评价状态</div><div style="float: left; width: 1.43rem; height: 1.1rem; border: solid 1px #436382; text-align: center; line-height: 1rem; color: #00C89D; font-weight: 600; font-size: 0.3rem; ">可用</div></li>
+                    <li><div class="label">处理意见</div><textarea style="width:8rem;height:1rem;">F2风机-输出端垂直振动--径向振动大，请关注转子平衡问题</textarea></li>
+                </ul>
+                <hr style="width: 100%; margin-top: 0.1rem; margin-bottom: 0.1rem; border-color: #436382;" />
+
+                <!--<ul class="query-buttons">
+                    <li><div class="btn">生成缺陷</div></li>
+                    <li><div class="btn">查看缺陷</div></li>
+                </ul>-->
+                <!--<ul class="tab-titles" id="tabs">
+                    <li class="active"><div>震动评价</div></li>
+                    <li><div>工艺评价</div></li>
+                    <li><div>电气评价</div></li>
+                    <li><div>点检评价</div></li>
+
+                </ul>-->
+                <div class="panel" id="panel3">
+                    <div class="panel-title"><p>评价结果详情</p></div>
+                    <div class="grid-container">
+                        <table class="report" style="width:100%;">
+                            <tr class="odd"><th>部件名称</th><th>评价项名称</th><th>结果</th><th>转速</th><th>评价级别</th><th>描述</th><th>评价标准</th></tr>
+                            <tr class="even"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="odd"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="even"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="odd"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="even"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="odd"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="even"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="odd"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="even"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="odd"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="even"><td>电机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="odd"><td>风机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td style="background-color: #00FF7F;color:#000;">正常</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+                            <tr class="even"><td>风机</td><td>径向RMS值</td><td>3.38</td><td>1490</td><td id="baojing" style="background-color: #FFFB7C; color: red;">报警</td><td></td><td>#2,0,0,0,00,0,71</td></tr>
+
+                        </table>
+
+                    </div>
+
+                    <!--注意现在还暂时不做翻页，预留位置-->
+                    <div class="pagin"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mo hide"></div>
+
+        <div class="panel hide" id="panel4">
+            <div class="panel-title"><p>状态检修详情</p></div>
+            <div style="text-align:center;color:#fff;">某某冶炼厂熔炼车间</div>
+            <div class="grid-container">
+                <table class="report" style=" width: 100%;">
+                    <tr class="odd"><th>序号</th><th>名称</th><th>描述</th><th>时间</th></tr>
+                    <tr class="even"><td>1</td><td>通知报警</td><td></td><td>2016-6-30</td></tr>
+                    <tr class="odd"><td>2</td><td>通知报警</td><td></td><td>2016-6-30</td></tr>
+                    <tr class="even"><td>3</td><td>通知报警</td><td></td><td>2016-6-30</td></tr>
+                    <tr class="odd"><td>4</td><td>通知报警</td><td></td><td>2016-6-30</td></tr>
+                    <tr class="even"><td>5</td><td>通知报警</td><td></td><td>2016-6-30</td></tr>
+                    <tr class="odd"><td>6</td><td>综合评价</td><td>设备运行状态良好，可长期使用！转子不平衡，征兆组【部件信息=斜拉链电机-自由端垂直振动】</td><td>1490</td></tr>
+                    <tr class="even"><td>7</td><td>专家诊断</td><td>【3倍频能量，值=0.1314】【4倍频能量，值=0.0882】</td><td>1490</td></tr>
+                    <tr class="odd"><td>8</td><td>处理意见</td><td>请进行状态维修</td><td>1490</td></tr>
+                    <!--<tr class="even"><td>9</td><td>径向RMS值</td><td>3.38</td><td>1490</td></tr>
+                    <tr class="odd"><td>10</td><td>径向RMS值</td><td>3.38</td><td>1490</td></tr>
+                    <tr class="even"><td>11</td><td>径向RMS值</td><td>3.38</td><td>1490</td></tr>
+                    <tr class="odd"><td>12</td><td>径向RMS值</td><td>3.38</td><td>1490</td></tr>-->
+                    <!--<tr class="even"><td>风机</td><td>径向RMS值</td><td>3.38</td><td>1490</td></tr>-->
+
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

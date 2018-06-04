@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <!--<link href="p.css" rel="stylesheet" />-->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        .line {
+            /*font-size:18px;*/
+            font-size:16px;
+            color:#48a0df;
+            text-align:center;
+            margin-top:5px;
+        }
+
+        .line img {
+            margin-bottom:-8px;
+        }
+
+        .img2 {
+            display:block;
+            margin:0 auto;
+            width:220px;
+            height:40px;
+            cursor:pointer;
+            margin-top:10px;
+        }
+
+        ul, li {
+            list-style-type: none;
+        }
+
+        ul {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        li {
+            font-size: 18px;
+            color: #fff;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        li span {
+            font-size:16px;
+            color:#fff;
+        }
+
+        .item {
+            float:left;
+        }
+
+        .value {
+            float:right;
+            
+        }
+
+
+        li.active {
+            cursor:default;
+        }
+ 
+    </style>
+</head>
+<body>
+     <div class="line">
+         <img src="img1.png" />
+         巡检点：风机盘管世纪中心
+     </div>
+    <img class="img2" src="img2.png" />
+    <ul>
+        <li>
+            <span class="item">检查项：</span>
+            <span class="value">检查风机盘管外观</span>
+        </li>
+        <li>
+            <span class="item">检查内容：</span>
+            <span class="value">检查内容</span>
+        </li>
+        <li>
+            <span class="item">正常范围值：</span>
+            <span class="value" style="color:#02d78f;">10～120(摄氏度)</span>
+        </li>
+        <li>
+            <span class="item">检测值：</span>
+            <span class="value" style="color:#f50434;">200</span>
+        </li>
+        <li>
+            <span class="item">是否正常：</span>
+            <span class="value" style="color: #f50434;">否</span>
+        </li>
+    </ul>
+</body>
+</html>

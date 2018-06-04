@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>蒸汽动力优化二</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-title"><p>参数确认区</p></div>
+
+            <div class="grid-container" id="grid1">
+                <table class='report'>
+                    <tr><th colspan="2">发电负荷（MW）</th><th colspan="2">蒸汽流量（t/h）</th><th colspan="2">天然气（Km3/h)</th><th colspan="2">重油（t/h）</th><th colspan="2">柴油（t/h）</th><th colspan="2">燃煤（t/h）</th></tr>
+                    <tr><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th></tr>
+                    <tr class="odd"><td>120.99</td><td>125.23</td><td>653.47</td><td>433.24</td><td>340.49</td><td>311.25</td><td>49.29</td><td>49.99</td><td>2.63</td><td>2.63</td><td>0</td><td>3.47</td></tr>
+                </table>
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel">
+            <div class="panel-title"><p>调度方案</p></div>
+
+            <div class="grid-container" id="grid2">
+                <table class='report left-head' style="display:none;">
+                    <tr><th rowspan="2" colspan="2"></th><th colspan="2">天然气（Km3/h）</th><th colspan="2">重油（t/h）</th><th colspan="2">柴油（t/h）</th><th colspan="2">煤（t/h）</th><th colspan="2">蒸汽（t/h）</th></tr>
+                    <tr><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th><th>当前</th><th>目标</th></tr>
+                    <tr class="odd"><th rowspan="6">锅炉</th><th>21</th><td>82.4</td><td>80.21</td><td>30.31</td><td>10.12</td><td>0</td><td>0</td><td>1</td><td>1</td><td>191.42</td><td>180.23</td></tr>
+                    <tr class="even"><th>22</th><td>1</td><td>1</td><td>18.98</td><td>39.87</td><td>1.58</td><td>1.58</td><td>0</td><td>0.91</td><td>193.8</td><td>213.21</td></tr>
+                    <tr class="odd"><th>23</th><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr class="even"><th>24</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1.05</td><td>1.05</td><td>0</td><td>2.56</td><td>146.45</td><td>130.26</td></tr>
+                    <tr class="odd"><th>25</th><td>129.76</td><td>100.53</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>187.45</td><td>165.23</td></tr>
+                    <tr class="even"><th>26</th><td>128.24</td><td>130.51</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>137.4</td><td>145.35</td></tr>
+                    <tr class="odd"><th rowspan="4">汽机</th><th>21</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>350.04</td><td>224.42</td></tr>
+                    <tr class="even"><th>22</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>313.11</td><td>224.42</td></tr>
+                    <tr class="odd"><th>23</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+                    <tr class="even"><th>24</th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+                </table>
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+
+
+    </div>
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

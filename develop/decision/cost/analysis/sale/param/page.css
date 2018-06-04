@@ -1,0 +1,26 @@
+﻿.panel {
+    width:100%;
+    margin-top:0.1rem;
+    float:left;
+    height:auto;
+    padding-bottom: 0.25rem;
+}
+
+.chart-container {
+    float:left;
+    width:75%;
+    height:4rem;
+
+}
+
+.panel .grid-container {
+    float:left;
+    width:20%;
+    margin-top:0.3rem;
+    clear:none;
+}
+
+.query-conditions {
+    float:right;
+    margin-right:0.5rem;
+}

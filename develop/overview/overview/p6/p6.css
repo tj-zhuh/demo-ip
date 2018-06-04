@@ -1,0 +1,16 @@
+.panel6l { float:left; width: 10.4rem; }
+/*.panel6l .panel6l-title { float: left; margin-top: 10px; margin-left:215px; font-size: 20px; font-family: '宋体'; font-weight: bold; color: #32e7e9; }*/
+.panel6l .panel6l-content { float: left; margin-top: 0.1rem; margin-left: 0.1rem; font-size: 0.2rem; line-height: 0.45rem; border: 0.5px dashed #32e7e9;  border-radius: 2px; background-color: rgba(76,160,223,0.34); }
+.panel6l .panel6l-content .name { margin-left: 0.1rem; font-family: '宋体'; font-size: 0.2rem; font-weight: bold; color: #32e7e9; }
+.panel6l .panel6l-content .value {margin: 0 0.1rem 0 0.1rem; font-size: 0.2rem; color: #32e7e9; }
+.panel6l .panel6l-content#panel6l-content1 { margin-left: 0.3rem; }
+.panel6l .panel6l-content#panel6l-content2 {  }
+.panel6l .panel6l-content#panel6l-content3 {  }
+.panel6l .panel6l-content#panel6l-content4 {  }
+.panel6r { float:left; width: 6rem; }
+.panel6r .panel6r-content { float: left; margin: 0.1rem 0 0 0.1rem; padding: 0.1rem; height: 0.6rem; line-height: 0.6rem; font-size: 0.2rem; font-family: '宋体'; color: #32e7e9;  border: 0.5px solid #48a1de;  border-radius: 2px; background-color: rgba(76,160,223,0.34); }
+/*.panel6r #panel6r-content1 { margin-left: 45px; }*/
+.panel6r #panel6r-content2 {}
+.panel6r #panel6r-content3 {}
+.panel6r #panel6r-content4 { border-width: 0; background-color: transparent; font-size: 0.2rem; }
+.panel6r #panel6r-content5 {}

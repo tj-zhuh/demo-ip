@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>点检任务</title>
+    <link href="../../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-title"><p>点检任务</p></div>
+            <ul class="query-conditions">
+                <li><label>专&#12288;业</label><input value="锅炉" /></li>
+                <li><label>机&#12288;组</label><input value="1#机组"/></li>
+                <li><label>计划名称</label><input value="电机SIS点检" /></li>
+                <li><label>计划点检时间</label><input value="2016-9-1" /><label>&#12288;--&#12288;</label><input value="2016-9-30" /></li>
+            </ul>
+            <ul class="query-conditions">
+                <li><label>点检人</label><input value="*" /></li>
+                <li><label>测点名</label><input value="*" /></li>
+                <li><label>设备名称</label><input value="空预器" /></li>
+                <li><div class="btn">查询</div></li>
+            </ul>
+
+            <div class="grid-container" id="grid1"></div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+    </div>
+
+    <script src="../../../../../js/rem.js"></script>
+    <script src="../../../../../js/config.js"></script>
+    <script src="../../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

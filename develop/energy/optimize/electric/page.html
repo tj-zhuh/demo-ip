@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用电负荷优化</title>
+
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>启停调度建议</p></div>
+            <div class="grid-container" id="grid1">
+                <table class="report">
+                    <tr><th colspan="5">1#总降</th><th colspan="5">2#总降</th></tr>
+                    <tr><th>运行状态</th><th>1#变压器</th><th>2#变压器</th><th>3#变压器</th><th>4#变压器</th><th>运行状态</th><th>1#变压器</th><th>2#变压器</th><th>3#变压器</th><th>4#变压器</th></tr>
+                    <tr><th>当前状态</th><td class="stopped">停止</td><td class="started">启动</td><td class="started">启动</td><td class="started">启动</td><th>当前状态</th><td class="stopped">停止</td><td class="started">启动</td><td class="stopped">停止</td><td class="started">启动</td></tr>
+                    <tr><th>建议状态</th><td class="stopped">停止</td><td class="started">启动</td><td class="started">启动</td><td class="started">启动</td><th>建议状态</th><td class="stopped">停止</td><td class="started">启动</td><td class="stopped">停止</td><td class="started">启动</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>功率实时监控</p></div>
+            <div class="grid-container" id="grid2">
+                <table class="report">
+
+                    <tr><th>运行状态</th><th>当前额定总功率</th><th>当前额定总功率</th><th>当前额定总功率</th><th>当前额定总功率</th><th>当前额定总功率</th></tr>
+                    <tr><th>1#总降</th><td>131.5</td><td>85</td><td>92</td><td>89</td><td>-32.3</td></tr>
+                    <tr><th>2#总降</th><td>80</td><td>68</td><td>72</td><td>70</td><td>-12.5</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="panel" id="panel3">
+            <div class="panel-title"><p>功率实时趋势</p></div>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

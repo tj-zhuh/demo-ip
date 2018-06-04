@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>设备资产管理</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../css/mtree.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel router">
+            <div class="panel-title"><p>功能位置</p></div>
+            <div class="mtree">
+            </div>
+        </div>
+        <div class="panel panel-grid">
+            <div class="panel-title"><p>设备资产管理</p></div>
+            <ul class="query-conditions">
+                <li><label>所属专业</label><input value="锅炉" /></li>
+                <li><label>安装位置</label><input value="1、2号机380V段" /></li>
+                <li><label>设备类型</label><input value="*" /></li>
+                <li><label>负责人&#12288;</label><input value="*" /></li>
+            </ul>
+            <ul class="query-conditions">
+                <li><label>设备型号</label><input value="*" /></li>
+                <li><label>生产厂家</label><input value="奥祥电力自动化" /></li>
+                <li><label>投运日期</label><input value="2015/12/1" /></li>
+                <li><label>--&#12288;&#12288;&#12288;</label><input value="2015/12/31" /></li>
+                <li><div class="btn">查询</div></li>
+            </ul>
+            <div class="grid-container" id="grid1"></div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel grid-router" id="router2">
+            <div class="panel-title"><p>信息选项</p></div>
+            <ul>
+                <li class="active"> 1&nbsp;基本信息</li>
+                <li> 2&nbsp;附属设备</li>
+                <li> 3&nbsp;备用备件</li>
+                <li> 4&nbsp;设备资料</li>
+                <li> 5&nbsp;异常记录</li>
+                <li> 6&nbsp;缺陷记录</li>
+                <li> 7&nbsp;检修记录</li>
+                <li> 8&nbsp;动作记录</li>
+                <li> 9&nbsp;投退记录</li>
+                <li>10&nbsp;异动记录</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

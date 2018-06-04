@@ -1,0 +1,30 @@
+﻿
+body, html {
+    height: 100%;
+    background-color: #0B2035; 
+}
+
+.container {
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 1280px; 
+}
+
+.ui {
+    margin-top:0.14rem;
+    margin-left: 1.9rem;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background-color: #0B2035;
+}
+
+.ui.hide-left {
+    margin-left: 0;
+}
+
+iframe {
+}
+
+.header {
+   
+}  

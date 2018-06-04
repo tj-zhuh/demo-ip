@@ -1,0 +1,173 @@
+﻿
+.panel{
+    float:left;
+
+}
+
+.panel1{
+    width:46%;
+    height:4rem;
+}
+
+.panel2{
+    width:48%;
+    height:4rem;
+}
+
+.panel3{
+    width:20%;
+    height:3rem;
+}
+
+.panel4{
+    width:15%;
+    height:3rem;
+}
+
+.panel5{
+    width:57.7%;
+    height:3rem;
+}
+
+
+#chart1{
+    width:100%;
+    height:3.6rem;
+}
+
+.topRight-msg{
+    width:100%;
+    height:3.6rem;
+}
+.topRight-msg ul{ 
+   margin-top:0.2rem;
+} 
+
+.topRight-msg li{
+    clear:both;
+    /*margin-top:0.2rem;*/
+    height: 0.4rem;
+    cursor:pointer;
+}
+
+.topRight-msg li:hover{
+    background-color:#224f75;
+}
+.topRight-msg li > p{
+    color:#fff;
+    margin-right:0.2rem;
+    float:right;
+    font-size:0.16rem;
+    line-height:0.4rem;
+}
+.topRight-msg li > p:first-child{
+    float:left;
+    text-indent:0.2rem;
+}
+
+
+
+
+
+
+
+.bottomLeft-img{
+    width:100%;
+    height:2.6rem;
+    background-size:contain;
+    background-image: url(img.png);
+    cursor:pointer;
+}
+
+.horizontal-bar{
+    margin-top: 0.4rem;
+}
+.horizontal-bar li {
+    clear:both;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+}
+.horizontal-bar li div{
+    height:0.2rem;
+    float:left;
+}
+.horizontal-bar li label{
+    color:#fff;
+}
+.horizontal-bar li p{
+    float:left;
+    color:#fff;
+    margin-left:0.1rem;
+    line-height:0.2rem;
+}
+.bottom-bar{
+    width:41%;
+    height:2.6rem;
+    float:left;
+}
+.bottom-bar li {
+    clear:both;
+    margin-top: 0.2rem;
+    height: 0.2rem;
+    margin-left: 0.3rem;
+}
+.bottom-bar li div{
+    height:0.2rem;
+    float:left;
+    margin-right: 0.1rem;
+}
+.bottom-bar li label{
+    color:#fff;
+    float:left;
+    width: 1rem;
+}
+.bottom-bar li p{
+    color:#fff;
+    float:left;
+    line-height: 0.2rem;
+}
+
+#chart2{
+    width:57%;
+    height:2.6rem;
+    float:left;
+}
+
+
+#bBar1-1{
+    background-color:#091ACC;
+    width:0;
+}
+#bBar1-2{
+    background-color:#17A515;
+    width:0;
+}
+#bBar1-3{
+    background-color:#CD30D0;
+    width:0;
+}
+
+#bBar2-1{
+    background-color:#94110C;
+    width:0;
+}
+#bBar2-2{
+    background-color:#D37728;
+    width:0;
+}
+#bBar2-3{
+    background-color:#5B840E;
+    width:0;
+}
+#bBar2-4{
+    background-color:#0D6B9E;
+    width:0;
+}
+#bBar2-5{
+    background-color:#51415E;
+    width:0;
+}
+#bBar2-6{
+    background-color:#712345;
+    width:0;
+}

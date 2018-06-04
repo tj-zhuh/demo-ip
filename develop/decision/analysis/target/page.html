@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>绩效指标考核与分析</title>
+
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--<h1>用户管理</h1>-->
+    <div class="container">
+
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>绩效指标考核与分析</p></div>
+            <ul class="query-conditions">
+                <li><label>层级</label><select id="select1"></select></li>
+                <li><label>类别</label><select id="select2"></select></li>
+                <li><label>分项类别</label><select id="select3"></select></li>
+                <li><label>考核对象</label><select id="select4"></select></li>
+                <li><label>分管单位</label><select id="select5"></select></li>
+            </ul>
+            <ul class="query-buttons">
+                <li><div class="btn" id="btn1">手动考核</div></li>
+                <li><div class="btn" id="btn2">查看</div></li>
+            </ul>
+            <div class="grid-container" id="grid1"></div>
+        </div>
+
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>2016年度生产计划达标率分布图</p></div>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+
+        <div class="panel" id="panel3">
+            <div class="panel-title"><p>2016年度生产计划达标率折线图</p></div>
+            <ul class="query-conditions">
+                <li><label>起止年度</label><select><option>2015</option></select><label>&#12288;--</label><select><option>2016</option></select></li>
+            </ul>
+            <div class="chart-container" id="chart2"></div>
+        </div>
+
+
+
+
+        <div class="panel hide" id="panel4">
+            <div class="panel-title"><p>结果分析</p></div>
+            <div class="panel hide" id="panel5">
+                <div class="panel-title"><p>厂级年度生产计划达标率</p></div>
+                <ul class="query-conditions">
+                    <li><label style="cursor:pointer;text-decoration:underline;color:#389edc;">前十</label></li>
+                    <li><label style="cursor:pointer;text-decoration:underline;color:#389edc;">后十</label></li>
+                </ul>
+                <div class="grid-container" id="grid2"></div>
+            </div>
+
+            <div class="panel hide" id="panel6">
+                <div class="panel-title"><p>前十名波动曲线</p></div>
+                <div class="chart-container" id="chart3"></div>
+            </div>
+           
+        </div>
+
+        <div class="panel hide" id="panel7">
+            <div class="panel-title"><p>故障分析</p></div>
+            <!--<div class="panel hide" id="panel8">
+                <div class="panel-title"><p>2016年度生产计划达标率折线图</p></div>
+                <div class="grid-container" id="grid3"></div>
+            </div>-->
+            <div class="grid-container" id="grid3"></div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="membrane-div hide" id="membrane"></div>
+
+
+    <script src="../../../../js/rem.js"></script>
+
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

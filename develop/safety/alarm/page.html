@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>安全报警管理</title>
+
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--<h1>用户管理</h1>-->
+    <div class="container">
+
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>报警信息</p></div>
+            <div id="img-container">
+                <img src="images/pic1.jpg" />
+            </div>
+            <ul id="legends">
+                <li><div class="icon normal"></div><p>正常:</p><p class="normalp">&nbsp;&nbsp;258</p></li>
+                <li><div class="icon error"></div><p>故障:</p><p class="errorp">&nbsp;&nbsp;15</p></li>
+                <li><div class="icon doing"></div><p>处理中:</p><p class="doingp">&nbsp;&nbsp;1</p></li>
+                <li><div class="icon rewarn"></div><p>预警:</p><p class="rewarnp">&nbsp;&nbsp;18</p></li>
+                <li><div class="icon alert"></div><p>报警:</p><p class="alertp">&nbsp;&nbsp;18</p></li>
+            </ul>
+        </div>
+
+        <div class="panel" id="panel2">
+            <div class="panel-title"><p>报警筛查</p></div>
+            <ul id="baojingshaicha">
+                <li>
+                    <label class="withTextArea">报警区域</label><textarea>
+熔炼车间
+电解车间
+硫酸车间
+动力车间
+选矿车间
+                    </textarea>
+                </li>
+                <li>
+                    <label class="withTextArea">报警类型</label><textarea>
+超标报警事件
+超标报警记录
+设备运行时间
+设备运行状态
+                    </textarea>
+                </li>
+                <li>
+                    <label class="withTextArea">报警因子</label><textarea>
+超标事件
+超标记录
+设备状态
+运行时间
+                    </textarea>
+                </li>
+                <li>
+                    <label class="withTextArea">报警设备</label><textarea>
+温度
+压力
+制氧机组
+制冷机组
+                    </textarea>
+                </li>
+                <li><label>起始时间</label><input /></li>
+                <li><label>结束时间</label><input /></li>
+            </ul>
+        </div>
+
+        <div class="panel" id="panel3">
+            <div class="panel-title"><p>报警详细信息</p></div>
+            <div class="grid-container" id="grid1">
+                <table class='report' style="width:100%;">
+                    <tr><th>序号</th><th>日期</th><th>时间</th><th>报警区域</th><th>报警类型</th><th>报警因子</th><th>报警设备</th><th>仪表名称</th><th>报警值</th><th>预警值</th><th>报警内容</th><th>处理方案</th><th>处理内容</th><th>报警次数</th><th>范围</th></tr>
+                    <tr class="odd"><td>1</td><td>20170501</td><td>8:08:00</td><td>动力车间</td><td>超标报警事件</td><td>状态报警</td><td>制氧机组</td><td>电机</td><td>停机</td><td></td><td></td><td>未处理</td><td>未处理</td><td>2</td><td>动力车间</td></tr>
+                    <tr class="even"><td>2</td><td>20170501</td><td>8:10:00</td><td>动力车间</td><td>超标报警事件</td><td>超标事件</td><td>制氧机组</td><td>氧气浓度</td><td>50</td><td>85</td><td class="tb-alarm">氧气浓度超标</td><td>未处理</td><td>未处理</td><td>4</td><td>动力车间</td></tr>
+                    <tr class="odd"><td>3</td><td>20170501</td><td>8:20:00</td><td>动力车间</td><td>超标报警事件</td><td>超标记录</td><td>制氧机组</td><td>氧气浓度</td><td>30</td><td>85</td><td class="tb-alarm">氧气浓度超标</td><td>未处理</td><td>未处理</td><td>6</td><td>动力车间</td></tr>
+                    <tr class="even"><td>4</td><td>20170501</td><td>8:08:02</td><td>动力车间</td><td>超标报警事件</td><td>超标事件</td><td>制氧机组</td><td>氧气浓度</td><td>30</td><td>85</td><td class="tb-alarm">氧气浓度超标</td><td>未处理</td><td>未处理</td><td>8</td><td>动力车间</td></tr>
+                    <tr class="odd"><td>5</td><td>20170501</td><td>8:10:08</td><td>动力车间</td><td>超标报警事件</td><td>运行时间</td><td>制氧机组</td><td>电机</td><td>21</td><td>20</td><td></td><td>未处理</td><td>未处理</td><td>9</td><td>动力车间</td></tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../../../js/rem.js"></script>
+    <script src="../../../js/config.js"></script>
+    <script src="../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

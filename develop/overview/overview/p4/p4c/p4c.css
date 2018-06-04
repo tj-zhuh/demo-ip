@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width:100%;
+     border-collapse: collapse;
+}
+
+tr {
+}
+
+th, td {
+    height: 24px;
+    line-height: 24px;
+    font-family:SimHei;    
+    text-align:center;
+    border-style:none;
+}
+
+th {
+    color: #32e6e9;
+    font-size:18px;
+}
+
+td {
+    color: #fff;
+    font-size:15px;
+}
+
+#table1 th {
+    height:26px;
+    line-height:26px;
+}
+
+
+
+/*.panel4cr .panel4cr-top img {
+    float: right;
+    width: 88px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.panel4cr .panel4cr-top img#panel4cr-top-img2 {
+    margin-left: 10px;
+}
+
+.panel4cr .panel4cr-mid {
+    margin-top: 35px;
+    height: 150px;
+    border: 0.1px solid #32e7e9;
+}
+
+.panel4cr .panel4cr-mid .panel4cr-mid-title {
+    height: 25px;
+    background-color: #32e7e9;
+    font-size: 18px;
+}
+
+.panel4cr .panel4cr-mid table {
+    height: 125px;
+}
+
+.panel4cr .panel4cr-mid tr {
+    height: 20px;
+}
+
+.panel4cr .panel4cr-mid th {
+    font-size: 18px;
+    width: 62.3px;
+    text-align: center;
+    color: #32e6e9;
+    font-family: 'SimHei';
+    font-weight: normal;
+}
+
+.panel4cr .panel4cr-mid td {
+    font-size: 15px;
+    width: 62.3px;
+    text-align: center;
+    color: white;
+    font-family: 'SimHei';
+}
+
+.panel4cr .panel4cr-bot {
+    height: 110px;
+    border: 0.1px solid #32e7e9;
+    font-size: 9px;
+}
+
+.panel4cr .panel4cr-bot table {
+    height: 70px;
+}
+
+.panel4cr .panel4cr-bot tr {
+    height: 20px;
+}
+
+.panel4cr .panel4cr-bot th {
+    font-size: 18px;
+    width: 113.9px;
+    text-align: center;
+    color: #32e6e9;
+    font-family: 'SimHei';
+    font-weight: normal;
+}
+
+.panel4cr .panel4cr-bot td {
+    font-size: 15px;
+    width: 113.9px;
+    text-align: center;
+    color: white;
+    font-family: 'SimHei';
+}*/

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>能效在线监控</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-title"><p>能效在线监控</p></div>
+            <ul class="query-conditions">
+                <li><label>燃煤实时值</label><input value="343.61(q/kWh)" /></li>
+                <li><label>燃煤目标值</label><input value="328.22(q/kWh)" /></li>
+                <li><label>燃煤偏差</label><input value="15.40(q/kWh)" /></li>
+                <li><label>机组负荷率</label><input value="60.05(q/kWh)" /></li>
+            </ul>
+            <div class="subtitle">1#机组二级指标偏差分析</div>
+            <div class="grid-container" id="grid1"></div>
+            <div class="subtitle">1#机组三级指标偏差分析</div>
+            <div class="grid-container" id="grid2"></div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+
+
+    </div>
+
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>

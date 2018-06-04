@@ -1,0 +1,30 @@
+﻿.panel {
+    height:auto;
+    /*min-height:2.5rem;*/
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.tb-checkbox {
+    background-image: url(../../../../images/icon-unchecked.png);
+    height: 0.25rem;
+    width: 0.25rem;
+    background-repeat:no-repeat;
+    margin-left:42%;
+}
+
+.tb-checkbox.active {
+    background-image: url(../../../../images/icon-checked.png)
+}
+
+.tb-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.chart-container {
+    min-height:7rem;
+    margin-bottom: 1rem;
+    padding-bottom:1rem;
+}

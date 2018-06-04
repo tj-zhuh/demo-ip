@@ -1,0 +1,107 @@
+﻿
+* td{
+     /*padding-top:5px;
+     padding-bottom:5px;*/
+     font-size:14px;
+     min-width:80px;
+}
+* th{
+     /*padding-top:5px;
+     padding-bottom:5px;*/
+
+     min-width:80px;
+}
+/*表格容器*/
+.container .grid-container{
+    height:380px;
+}
+
+.container .topbar{
+    height:66px;
+}
+
+ul.bar-content{
+    margin-top:10px;
+    height:18px;
+}
+
+ul.bar-content li{
+    float:left;
+    width:220px;
+
+}
+
+ul.bar-content li.withTwoTimeInput{width:312px;}
+
+ul.bar-content li label{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+ul.bar-content li input{
+    width:100px;
+}
+
+ul.bar-content li select{
+    width:100px;
+    height:22px;
+}
+
+.tb-edit{margin-left:39%;}
+.tb-delete{margin-left:10%;}
+
+
+
+
+.redDiv{width:100%;height:100%;background-color:red;color:#fff;}
+.yellowDiv{width:100%;height:100%;background-color:yellow;color:#000;}
+.greenDiv{width:100%;height:100%;background-color:green;color:#fff;}
+.blueDiv{width:100%;height:100%;background-color:blue;color:#fff;}
+.grayDiv{width:100%;height:100%;background-color:gray;color:#fff;}
+
+
+
+.legend{
+    float:left;
+    width:40px;
+    height:32px;
+    margin-right:5px;
+}
+
+ul.legend-ul{clear:both;}
+
+ul.legend-ul li{
+    float:left;
+    width:150px;
+    height:32px;
+}
+
+.gray{background-color:gray;}
+.yellow{background-color:yellow;}
+.red{background-color:red;}
+.green{background-color:green;}
+
+.bottom-right-topbar{
+    height:74px;
+}
+
+ul.bottom-right-ul li{
+    float:left;
+}
+
+ul.bottom-right-ul li input{
+    width:50px;
+}
+
+ul.bottom-right-ul li select{
+    width:50px;
+}
+
+
+
+
+
+
+
+
+

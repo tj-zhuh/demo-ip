@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>库存实时监控</title> 
+    <link href="../../../../../css/style.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <div class="panel" id="panel1">
+            <div class="panel-title"><p>全部库位</p></div>
+
+            <ul id="top-btns">
+                <li class="t1">超标</li>
+                <li class="t2">闲置</li>
+                <li class="t3">空闲</li>
+                <li class="t4">饱和</li>
+                <li class="t5">全部</li>
+            </ul>
+
+            <ul class="stores">
+                <li class="t1">
+                    <div class="title">原料进厂情况</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>原料库</p>
+                    <cite id="btn1">78976（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t2">
+                    <div class="title">原料库存情况</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>粗轧铜库</p>
+                    <cite id="btn2">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t3">
+                    <div class="title">原料投料情况</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>渣料</p>
+                    <cite id="btn3">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t4">
+                    <div class="title">产品产量情况</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>硫酸</p>
+                    <cite id="btn4">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t5">
+                    <div class="title">产品库存情况</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>阴极铜</p>
+                    <cite id="btn5">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t3">
+                    <div class="title">阴极铜销售情况</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>阳极铜</p>
+                    <cite id="btn6">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t4">
+                    <div class="title">金</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>金</p>
+                    <cite id="btn7">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <li class="t3">
+                    <div class="title">银</div>
+                    <img src="car.png" />
+                    <!--<p>0001</p>-->
+                    <p>银</p>
+                    <cite id="btn8">798699（吨）</cite>
+                    <!--<p>剩余库容：0.00</p>-->
+                </li>
+                <!--<li class="t4">
+                    <div class="title">1</div>
+                    <img src="car.png" />
+                    <p>0001</p>
+                    <p>温州学校</p>
+                    <cite id="btn9">798699（吨）</cite>
+                    <p>剩余库容：0.00</p>
+                </li>-->
+                <!--<li class="t4">
+                    <div class="title">1</div>
+                    <img src="car.png" />
+                    <p>0001</p>
+                    <p>温州学校</p>
+                    <cite id="btn10">798699（吨）</cite>
+                    <p>剩余库容：0.00</p>
+                </li>-->
+            </ul> 
+        </div>
+
+        <div class="mo hide"></div>
+        <div class="panel hide" id="win">
+            <div class="panel-title" id="winTitle"><p>xxx</p></div>
+            <div id="chart"></div>
+
+        </div>
+
+    </div>
+    <script src="../../../../../js/rem.js"></script>
+    <script src="../../../../../js/modules/jquery-1.12.4.js"></script>
+    <script src="../../../../../js/modules/echarts-3.3.2.js"></script>
+    <script src="../../../../../js/modules/putOn.js"></script>
+    <script src="../../../../../js/modules/util.js"></script>
+    <script src="page.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+﻿td{
+    text-align:center;
+}
+
+.mo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    top: 0;
+    z-index: 8;
+}
+
+.hide {
+    margin-left: -9999px;
+}
+
+.win{
+    position:absolute;
+}
+
+.panel {
+    /*margin-left: 0.11rem;*/
+    margin-right: 0.1rem;
+    /*height: 7rem;*/
+    border: solid 3px #ccc;
+    margin-top: 0.1rem;
+    background-color: #0a2033;
+    border-image-source: url(../images/zborder.png);
+    border-image-slice: 26;
+    border-image-width: 0.3rem;
+    border-image-outset: 1;
+}
+
+.panel-title {
+    background-color: #1b2f4f;
+    /*border-bottom: solid 1px #bababa;*/
+    font-weight: 600;
+    height: 0.41rem;
+}
+
+.panel-title > p {
+        color: #bccae1;
+        font-size: 0.18rem;
+        font-family: 'Microsoft YaHei';
+        line-height: 0.41rem;
+        float: left;
+        min-width: 1rem;
+        margin-left: 0.25rem;
+    }
+
+#win1{
+    top:3rem;
+    left:4rem;
+    height:5rem;
+    width:10rem;
+    z-index:9;
+}
+    
+#chart {
+    height: 4.5rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+#win2{
+    top:2rem;
+    left:3rem;
+    height:5.2rem;
+    width:13rem;
+    z-index:9;
+}
+
+#win2-2{
+    top:3rem;
+    left:4rem;
+    height:4.7rem;
+    width:10rem;
+    z-index:9;
+}
+
+
+#panel2{
+    float:left;
+    width:6.9rem;
+    height:4.5rem;
+}
+
+#panel2-1{
+    margin-left:7.2rem;
+    margin-right:0.1rem;
+    height:4.5rem;
+}
+
+#chart2{
+    width:100%;
+    height:4.1rem;
+}
+
+#ex-ul{
+margin-left:0.2rem;
+margin-top:0.2rem;
+}
+
+#ex-ul li{
+
+}
+
+#ex-ul li .label{
+    color:#c4d2e9;
+    font-size:0.14rem;
+    float:left;
+    width:1rem;
+    height:0.3rem;
+    line-height:0.3rem;
+    margin-left:0.1rem;
+}
+
+#ex-ul li textarea{
+    width:78%;
+    text-indent:0.1rem;
+    background-color:transparent;
+    color:#fff;
+}
+
+#td256{
+    text-decoration:underline;
+    color:#00deb9;
+    cursor:pointer;
+}
+
+textarea{
+    line-height:0.2rem;
+    padding:0;
+}
+
+.panel .grid-container{
+    border-bottom:none;
+    border-left:none;
+}
+
+#win3{
+    top:2rem;
+    left:4rem;
+    height:8.7rem;
+    width:10rem;
+    z-index:9;
+}
+
+#grid3{
+    width:5rem;
+    float:left;
+}
+
+#chart3{
+    float:left;
+    height: 2.8rem;
+    width: 4.2rem;
+}
+
+#chart3-2{
+    width:100%;
+    height:3rem;
+    clear: both;
+}
+
+#win4{
+    top:2rem;
+    left:4rem;
+    height:6.8rem;
+    width:10rem;
+    z-index:9;
+}
+
+#chart4{
+    height:5rem;
+    width:100%;
+
+}
+
+#win5-1{
+    top:2rem;
+    left:4rem;
+    height:5.8rem;
+    width:10rem;
+    z-index:9;
+}
+
+#chart5{
+    width:100%;
+    height:5rem;
+}
+
+#win5-2{
+   top: 0.6rem;
+    left: 2.4rem;
+
+ width:13.61rem;height:8.5rem;
+    z-index:9;
+}
+
+
+
+
+
+
+
+#win5-3{
+    top:2rem;
+    left:4rem;
+    height:3.8rem;
+    width:10rem;
+    z-index:9;
+}
+

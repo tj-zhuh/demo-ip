@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>存活预测</title>
+    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../../../../lib/tb/tbcss.css" rel="stylesheet" />
+    <link href="../../../../lib/tb.css" rel="stylesheet" />
+    <link href="page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-detail">
+            <div class="panel-title"><p>预测详情</p></div>
+            <ul class="query-conditions">
+                <li><label>物料类别</label>
+                    <select >
+                        <option>铜原料</option>
+                        <option>中间物料</option>
+                        <option>其他物料</option>
+                    </select>
+                    <label class="lalala active">自产矿</label>
+                    <label class="lalala">国内矿</label>
+                    <label class="lalala">外购粗铜</label>
+                </li>
+            </ul>
+            <div class="grid-container" id="grid1">
+                <table class='report' style="width: 100%;">
+                    <tr><th>周期</th><th>需求</th><th>周期因素</th><th>去周期因素影响</th><th>平滑预测</th><th>趋势</th><th>平滑</th><th>覆盖（修正）趋势</th><th>考虑趋势调整的预测</th><th>考虑周期因素的预测</th><th>事件影响指标</th><th>覆盖（修正）预测指标</th><th>覆盖（修正）固定预测</th><th>最终预测结果</th></tr>
+                    <tr class="odd"><td>201605</td><td>1078768</td><td>1</td><td>1078768</td><td>213768</td><td>213768</td><td>28261</td><td>0.8</td><td>234421</td><td>234421</td><td>1</td><td>1</td><td>0</td><td>234421</td></tr>
+                    <tr class="even"><td>201606</td><td>1068066</td><td>1</td><td>1068066</td><td>211008</td><td>211008</td><td>28261</td><td>0.8</td><td>233564</td><td>233564</td><td>1</td><td>1</td><td>0</td><td>233564</td></tr>
+                    <tr class="odd"><td>201607</td><td>1078127</td><td>1</td><td>1078127</td><td>212343</td><td>212343</td><td>28261</td><td>0.8</td><td>234092</td><td>234092</td><td>1</td><td>1</td><td>0</td><td>234092</td></tr>
+                    <tr class="even"><td>201608</td><td>1075709</td><td>1</td><td>1075709</td><td>213009</td><td>213009</td><td>28261</td><td>0.8</td><td>231896</td><td>231896</td><td>1</td><td>1</td><td>0</td><td>231896</td></tr>
+                    <tr class="odd"><td>201607</td><td>1078127</td><td>1</td><td>1078127</td><td>212343</td><td>212343</td><td>28261</td><td>0.8</td><td>234092</td><td>234092</td><td>1</td><td>1</td><td>0</td><td>234092</td></tr>
+                    <tr class="even"><td>201608</td><td>1075709</td><td>1</td><td>1075709</td><td>213009</td><td>213009</td><td>28261</td><td>0.8</td><td>231896</td><td>231896</td><td>1</td><td>1</td><td>0</td><td>231896</td></tr>
+                </table>
+            </div>
+
+            <!--注意现在还暂时不做翻页，预留位置-->
+            <div class="pagin"></div>
+        </div>
+        <div class="panel panel-predicate">
+            <div class="panel-title"><p>存活预测</p></div>
+            <div class="grid-container" id="grid21">
+
+            </div>
+            <div class="grid-container" id="grid22"></div>
+        </div>
+        <div class="panel panel-chart">
+            <div class="panel-title"><p>图形展示</p></div>
+            <div class="chart-container" id="chart1"></div>
+        </div>
+
+
+    </div>
+    <script src="../../../../js/rem.js"></script>
+    <script src="../../../../js/config.js"></script>
+    <script src="../../../../js/require-2.1.11.js" data-main="page"></script>
+</body>
+</html>
